@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="container-fluid vh-100 vw-100 d-flex flex-column">
       <Header />
-      <main className="flex-fill bg-light p-4">
+      <main className="row flex-fill bg-light p-4">
         <p>Body.</p>
       </main>
     </div>
