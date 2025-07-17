@@ -1,8 +1,9 @@
 import profileImg from "../assets/IMG_3676.jpg";
+import IconButton from "./IconButton";
 
 const Header = () => {
   return (
-    <header className="row bg-light text-dark py-2 border-bottom">
+    <header className="row bg-light text-dark border-bottom py-2 px-2">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex gap-2">
           <button
@@ -26,18 +27,12 @@ const Header = () => {
         <div className="d-flex gap-2">
           <button
             type="button"
-            className="btn text-secondary px-2 d-none d-md-block"
+            className="btn text-secondary d-none d-md-block px-2"
             style={{ fontSize: "1rem", border: "none" }}
           >
             FAQ
           </button>
-          <button
-            type="button"
-            className="btn btn-outline-secondary btn-icon px-2"
-            style={{ fontSize: "1rem" }}
-          >
-            <i className="bi bi-moon"></i>
-          </button>
+          <IconButton icon="bi bi-moon" />
         </div>
       </div>
     </header>
