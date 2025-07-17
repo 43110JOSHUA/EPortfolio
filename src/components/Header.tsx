@@ -7,7 +7,7 @@ interface HeaderProps {
 
 const Header = ({ toggleTheme }: HeaderProps) => {
   return (
-    <header className="row border-bottom py-2 px-0  px-md-2">
+    <header className="row bg-body-tertiary border-bottom py-2 px-0  px-md-2">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex gap-2 align-items-center">
           <button
