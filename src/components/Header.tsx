@@ -30,7 +30,7 @@ const Header = ({ toggleTheme }: HeaderProps) => {
         <div className="d-flex gap-2">
           <button
             type="button"
-            className="btn d-none d-md-block px-2"
+            className="btn text-secondary d-none d-md-block px-2"
             style={{ fontSize: "1rem", border: "none" }}
           >
             FAQ
