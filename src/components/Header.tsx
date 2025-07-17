@@ -1,9 +1,13 @@
 import profileImg from "../assets/IMG_3676.jpg";
 import IconButton from "./IconButton";
 
-const Header = () => {
+interface HeaderProps {
+  toggleTheme: () => void;
+}
+
+const Header = ({ toggleTheme }: HeaderProps) => {
   return (
-    <header className="row bg-light text-dark border-bottom py-2 px-0  px-md-2">
+    <header className="row border-bottom py-2 px-0  px-md-2">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex gap-2 align-items-center">
           <button
@@ -26,7 +30,7 @@ const Header = () => {
         <div className="d-flex gap-2">
           <button
             type="button"
-            className="btn text-secondary d-none d-md-block px-2"
+            className="btn d-none d-md-block px-2"
             style={{ fontSize: "1rem", border: "none" }}
           >
             FAQ
@@ -37,7 +41,7 @@ const Header = () => {
               window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
             }
           />
-          <IconButton icon="bi bi-moon" onClick={() => {}} />
+          <IconButton icon={"bi bi-moon"} onClick={toggleTheme} />
         </div>
       </div>
     </header>
