@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="row bg-light text-dark border-bottom py-2 px-0  px-md-2">
       <div className="d-flex justify-content-between align-items-center">
-        <div className="d-flex gap-2">
+        <div className="d-flex gap-2 align-items-center">
           <button
             type="button"
             className="btn p-0 rounded-circle overflow-hidden"
@@ -13,7 +13,6 @@ const Header = () => {
               width: "40px",
               height: "40px",
               border: "none",
-              background: "none",
             }}
           >
             <img
@@ -22,7 +21,7 @@ const Header = () => {
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </button>
-          <h4 className="pt-1">Joshua Tang</h4>
+          <h5 className="pt-1 px-2">Joshua Tang / EPortfolio</h5>
         </div>
         <div className="d-flex gap-2">
           <button
@@ -32,8 +31,13 @@ const Header = () => {
           >
             FAQ
           </button>
-          <IconButton icon="bi bi-github" />
-          <IconButton icon="bi bi-moon" />
+          <IconButton
+            icon="bi bi-github"
+            onClick={() =>
+              window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
+            }
+          />
+          <IconButton icon="bi bi-moon" onClick={() => {}} />
         </div>
       </div>
     </header>
