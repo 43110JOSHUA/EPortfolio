@@ -3,7 +3,7 @@ import IconButton from "./IconButton";
 
 const Header = () => {
   return (
-    <header className="row bg-light text-dark border-bottom py-2 px-2">
+    <header className="row bg-light text-dark border-bottom py-2 px-0  px-md-2">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex gap-2">
           <button
@@ -22,7 +22,7 @@ const Header = () => {
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </button>
-          <h3 className="pt-1">Joshua Tang</h3>
+          <h4 className="pt-1">Joshua Tang</h4>
         </div>
         <div className="d-flex gap-2">
           <button
@@ -32,6 +32,7 @@ const Header = () => {
           >
             FAQ
           </button>
+          <IconButton icon="bi bi-github" />
           <IconButton icon="bi bi-moon" />
         </div>
       </div>
