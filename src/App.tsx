@@ -1,14 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="vh-100 d-flex flex-column">
-      <header className="bg-primary text-white p-4">
-        <h1>My Portfolio Headerddddddddddddddddddddddddddddddddd</h1>
-      </header>
+    <div className="container-fluid vh-100 vw-100 d-flex flex-column">
+      <Header />
       <main className="flex-fill bg-light p-4">
-        <p>This is the body contentdddddddddddddddddddddddddd.</p>
+        <p>Body.</p>
       </main>
     </div>
   );
