@@ -15,6 +15,10 @@ const ProjectEntry = () => {
             example text to build on the card title and make up the bulk of the
             card’s content.
           </p>
+          <div className="container-fluid d-flex flex-wrap gap-1">
+            <span className="badge rounded-pill text-bg-warning">Python</span>
+            <span className="badge rounded-pill text-bg-success">React</span>
+          </div>
         </div>
       </div>
     </button>
