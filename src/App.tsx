@@ -16,9 +16,9 @@ function App() {
     <html data-bs-theme={colorScheme}>
       <div className="container-fluid vh-100 vw-100 d-flex flex-column">
         <Header toggleTheme={toggleTheme} />
-        <main className="row flex-fill px-5 py-3 container-fluid vh-100 vw-100 d-flex flex-row">
-          <div className="col">LeftSide</div>
-          <div className="col">
+        <main className="row px-2 px-md-5 py-4 vh-100 vw-100">
+          <div className="col-4">LeftSide</div>
+          <div className="col-8">
             <ProjectList />
           </div>
         </main>
