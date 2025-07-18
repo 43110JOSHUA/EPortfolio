@@ -5,16 +5,13 @@ const ProjectList = () => {
     <>
       <h5 className="pb-2">My Projects</h5>
       <ul className="list-group">
-        <li className="list-group-item">
+        <li className="list-group-item p-3 d-flex flex-column gap-3">
           <ProjectEntry />
-        </li>
-        <li className="list-group-item">
+
           <ProjectEntry />
-        </li>
-        <li className="list-group-item">
+
           <ProjectEntry />
-        </li>
-        <li className="list-group-item">
+
           <ProjectEntry />
         </li>
       </ul>
