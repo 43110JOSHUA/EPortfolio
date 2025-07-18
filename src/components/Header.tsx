@@ -1,5 +1,6 @@
 import profileImg from "../assets/IMG_3676.jpg";
 import IconButton from "./IconButton";
+import Avatar from "./Avatar";
 
 interface HeaderProps {
   toggleTheme: () => void;
@@ -7,24 +8,10 @@ interface HeaderProps {
 
 const Header = ({ toggleTheme }: HeaderProps) => {
   return (
-    <header className="row bg-body-tertiary border-bottom py-2 px-0  px-md-2">
+    <header className="row bg-body-tertiary border-bottom sticky-top py-2 px-2   px-md-3">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex gap-2 align-items-center">
-          <button
-            type="button"
-            className="btn p-0 rounded-circle overflow-hidden"
-            style={{
-              width: "40px",
-              height: "40px",
-              border: "none",
-            }}
-          >
-            <img
-              src={profileImg}
-              alt="Profile"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
-          </button>
+          <Avatar src={profileImg} />
           <h5 className="pt-1 px-2">Joshua Tang / EPortfolio</h5>
         </div>
         <div className="d-flex gap-2">
