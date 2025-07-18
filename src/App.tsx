@@ -20,8 +20,8 @@ function App() {
     <div className="container-fluid d-flex flex-column">
       <Header toggleTheme={toggleTheme} />
       <main className="row x-2 px-md-5 py-4 ">
-        <div className="col-4">LeftSide</div>
-        <div className="col-8">
+        <div className="col-4 d-none d-md-block">LeftSide</div>
+        <div className="col-12 col-md-8">
           <ProjectList />
         </div>
       </main>
