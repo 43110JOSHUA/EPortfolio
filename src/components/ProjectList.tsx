@@ -5,7 +5,7 @@ const ProjectList = () => {
     <>
       <h5 className="pb-2">My Projects</h5>
       <ul className="list-group">
-        <li className="list-group-item p-3 d-flex flex-column gap-3">
+        <li className="list-group-item d-flex flex-column gap-3 p-2">
           <ProjectEntry />
 
           <ProjectEntry />

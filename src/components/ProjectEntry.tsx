@@ -1,7 +1,7 @@
 const ProjectEntry = () => {
   return (
-    <div className="card" style={{ width: "10rem" }}>
-      <img className="card-img-top" alt="..." />
+    <div className="card">
+      <img className="card-img-top" />
       <div className="card-body">
         <h5 className="card-title">Card title</h5>
         <p className="card-text">
