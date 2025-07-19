@@ -9,7 +9,13 @@ const ProjectList = () => {
           <ProjectEntry
             title="Charity Code"
             year="2025"
-            tools={["Python", "React"]}
+            tools={[
+              ["Next.js", "warning"],
+              ["FireBase", "danger"],
+            ]}
+            onClick={() =>
+              window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
+            }
           >
             Some quick example text to build on the card title and make up the
             bulk of the card’s content. Some quick example text to build on the
@@ -20,7 +26,14 @@ const ProjectList = () => {
           <ProjectEntry
             title="Portfolio Website"
             year="2025"
-            tools={["React", "TypeScript", "Bootstrap"]}
+            tools={[
+              ["React.js", "primary"],
+              ["TypeScript", "info"],
+              ["Bootstrap", "light"],
+            ]}
+            onClick={() =>
+              window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
+            }
           >
             Some quick example text to build on the card title and make up the
             bulk of the card’s content. Some quick example text to build on the
@@ -31,7 +44,13 @@ const ProjectList = () => {
           <ProjectEntry
             title="Class Tracker"
             year="2025"
-            tools={["Python", "SQLite"]}
+            tools={[
+              ["Python", "success"],
+              ["SQLite", "primary"],
+            ]}
+            onClick={() =>
+              window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
+            }
           >
             Some quick example text to build on the card title and make up the
             bulk of the card’s content. Some quick example text to build on the

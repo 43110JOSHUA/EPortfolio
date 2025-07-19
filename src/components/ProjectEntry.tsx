@@ -1,13 +1,14 @@
 interface Props {
   title: string;
   year: string;
-  tools: string[];
+  tools: [string, string][]; // [tool name, bootstrap color variant]
   children: React.ReactNode;
+  onClick?: () => void; // Optional click handler
 }
 
-const ProjectEntry = ({ title, year, tools, children }: Props) => {
+const ProjectEntry = ({ title, year, tools, children, onClick }: Props) => {
   return (
-    <button className="btn text-start p-0">
+    <button className="btn text-start p-0" onClick={onClick}>
       <div className="card">
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center">
@@ -17,8 +18,11 @@ const ProjectEntry = ({ title, year, tools, children }: Props) => {
 
           <p className="card-text">{children}</p>
           <div className="container-fluid d-flex flex-wrap gap-1 p-0">
-            {tools.map((tool, index) => (
-              <span key={index} className="badge rounded-pill text-bg-warning">
+            {tools.map(([tool, color], index) => (
+              <span
+                key={index}
+                className={`badge rounded-pill text-bg-${color}`}
+              >
                 {tool}
               </span>
             ))}
