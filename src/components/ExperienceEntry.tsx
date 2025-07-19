@@ -1,19 +1,21 @@
-const ExperienceEntry = () => {
+interface Props {
+  role: string;
+  company: string;
+  date: string;
+  children: React.ReactNode; // List items
+}
+
+const ExperienceEntry = ({ role, company, date, children }: Props) => {
   return (
     <li className="list-group-item p-3">
       <div className="d-flex justify-content-between align-items-top gap-4">
-        <h6>Role - Microsoft</h6>
-        <h6 className="text-end">Sep 2025 - Dec 2025</h6>
+        <h6>
+          <strong>{role}</strong> - {company}
+        </h6>
+        <h6 className="text-end">{date}</h6>
       </div>
       <div>
-        <ul>
-          <li>Developed new features for the company website</li>
-          <li>Collaborated with the design team to improve user experience</li>
-          <li>
-            Participated in code reviews and contributed to team knowledge
-            sharing
-          </li>
-        </ul>
+        <ul>{children}</ul>
       </div>
     </li>
   );
