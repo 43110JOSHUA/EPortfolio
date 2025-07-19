@@ -15,7 +15,10 @@ const ProjectList = () => {
               ["Bootstrap", "info"],
             ]}
             onClick={() =>
-              window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
+              window.open(
+                "https://github.com/43110JOSHUA/CharityCode",
+                "_blank"
+              )
             }
           >
             Some quick example text to build on the card title and make up the
@@ -50,7 +53,31 @@ const ProjectList = () => {
               ["SQLite", "primary"],
             ]}
             onClick={() =>
-              window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
+              window.open(
+                "https://github.com/43110JOSHUA/ClassTracker",
+                "_blank"
+              )
+            }
+          >
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content. Some quick example text to build on the
+            card title and make up the bulk of the card’s content. Some quick
+            example text to build on the card title and make up the bulk of the
+            card’s content.
+          </ProjectEntry>
+          <ProjectEntry
+            title="Taipei MRT"
+            year="2025"
+            tools={[
+              ["Roblox", "primary"],
+              ["Lua", "info"],
+              ["Blender3D", "warning"],
+            ]}
+            onClick={() =>
+              window.open(
+                "https://www.roblox.com/games/14059422828/Taipei-MRT",
+                "_blank"
+              )
             }
           >
             Some quick example text to build on the card title and make up the
