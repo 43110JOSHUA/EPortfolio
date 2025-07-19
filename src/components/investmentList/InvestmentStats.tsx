@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { investmentsCost } from "./InvestmentList";
 
-const API_KEY = "d1to5c1r01qth6pm8c1gd1to5c1r01qth6pm8c20";
+const API_KEY = "YOUR_FINNHUB_API_KEY"; // Replace with your actual API key
 
 const InvestmentStats = () => {
   const [stockPrices, setStockPrices] = useState<{ [symbol: string]: number }>(
