@@ -1,12 +1,23 @@
+import { useState, useEffect } from "react";
 import profileImg from "../assets/IMG_3676.jpg";
 import IconButton from "./IconButton";
 import Avatar from "./Avatar";
 
-interface HeaderProps {
-  toggleTheme: () => void;
-}
+const Header = () => {
+  const [colorScheme, setColorScheme] = useState("light");
+  const [themeIcon, setThemeIcon] = useState("bi bi-moon");
 
-const Header = ({ toggleTheme }: HeaderProps) => {
+  const toggleTheme = () => {
+    setColorScheme((prev) => (prev === "light" ? "dark" : "light"));
+    setThemeIcon((prev) =>
+      prev === "bi bi-moon" ? "bi bi-brightness-high" : "bi bi-moon"
+    );
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-bs-theme", colorScheme);
+  }, [colorScheme]);
+
   return (
     <header className="row bg-body-tertiary border-bottom sticky-top py-2 px-2   px-md-3">
       <div className="d-flex justify-content-between align-items-center">
@@ -28,7 +39,7 @@ const Header = ({ toggleTheme }: HeaderProps) => {
               window.open("https://github.com/43110JOSHUA", "_blank")
             }
           />
-          <IconButton icon={"bi bi-moon"} onClick={toggleTheme} />
+          <IconButton icon={themeIcon} onClick={toggleTheme} />
         </div>
       </div>
     </header>
