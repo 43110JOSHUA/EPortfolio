@@ -12,6 +12,7 @@ const ProjectList = () => {
             tools={[
               ["Next.js", "warning"],
               ["FireBase", "danger"],
+              ["Bootstrap", "info"],
             ]}
             onClick={() =>
               window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
@@ -27,9 +28,9 @@ const ProjectList = () => {
             title="Portfolio Website"
             year="2025"
             tools={[
-              ["React.js", "primary"],
-              ["TypeScript", "info"],
-              ["Bootstrap", "light"],
+              ["React.js", "warning"],
+              ["TypeScript", "primary"],
+              ["Bootstrap", "info"],
             ]}
             onClick={() =>
               window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")

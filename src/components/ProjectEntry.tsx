@@ -19,10 +19,7 @@ const ProjectEntry = ({ title, year, tools, children, onClick }: Props) => {
           <p className="card-text">{children}</p>
           <div className="container-fluid d-flex flex-wrap gap-1 p-0">
             {tools.map(([tool, color], index) => (
-              <span
-                key={index}
-                className={`badge rounded-pill text-bg-${color}`}
-              >
+              <span key={index} className={`badge rounded-pill bg-${color}`}>
                 {tool}
               </span>
             ))}
