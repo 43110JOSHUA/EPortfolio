@@ -25,7 +25,7 @@ const Header = ({ toggleTheme }: HeaderProps) => {
           <IconButton
             icon="bi bi-github"
             onClick={() =>
-              window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
+              window.open("https://github.com/43110JOSHUA", "_blank")
             }
           />
           <IconButton icon={"bi bi-moon"} onClick={toggleTheme} />

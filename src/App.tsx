@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import { useState, useEffect } from "react";
 import ProjectList from "./components/ProjectList";
+import ExperienceList from "./components/ExperienceList";
 
 function App() {
   const [colorScheme, setColorScheme] = useState("light");
@@ -19,8 +20,10 @@ function App() {
   return (
     <div className="container-fluid d-flex flex-column">
       <Header toggleTheme={toggleTheme} />
-      <main className="row x-2 px-md-5 py-4 ">
-        <div className="col-4 d-none d-md-block">LeftSide</div>
+      <main className="row g-4 px-md-5 py-4">
+        <div className="col-12 col-md-4">
+          <ExperienceList />
+        </div>
         <div className="col-12 col-md-8">
           <ProjectList />
         </div>
