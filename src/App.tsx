@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import ProjectList from "./components/ProjectList";
 import ExperienceList from "./components/ExperienceList";
+import InvestmentList from "./components/InvestmentList";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
           <ProjectList />
         </div>
       </main>
+      <hr />
+      <footer className="px-md-5 pt-2 pb-4">
+        <InvestmentList />
+      </footer>
     </div>
   );
 }

@@ -32,7 +32,6 @@ const ProjectList = () => {
             year="2025"
             tools={[
               ["React.js", "warning"],
-              ["TypeScript", "primary"],
               ["Bootstrap", "info"],
             ]}
             onClick={() =>
