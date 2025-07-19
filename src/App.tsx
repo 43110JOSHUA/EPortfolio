@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import ProjectList from "./components/ProjectList";
 import ExperienceList from "./components/ExperienceList";
-import InvestmentList from "./components/InvestmentList";
+import InvestmentList from "./components/investmentList/InvestmentList";
 
 function App() {
   return (
