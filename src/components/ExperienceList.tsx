@@ -8,7 +8,7 @@ const ExperienceList = () => {
         <ExperienceEntry
           role="Learning Assistant"
           company="University of California Irvine"
-          date="Sep 2024 - Jun 2025"
+          date="Sep 2025 - Dec 2025"
         >
           <li>Collaborated with peers on game design projects</li>
           <li>Participated in weekly game jams and hackathons</li>
@@ -18,6 +18,15 @@ const ExperienceList = () => {
           role="Member"
           company="Video Game Development Club"
           date="Sep 2024 - Jun 2025"
+        >
+          <li>Collaborated with peers on game design projects</li>
+          <li>Participated in weekly game jams and hackathons</li>
+          <li>Contributed to open-source game development initiatives</li>
+        </ExperienceEntry>
+        <ExperienceEntry
+          role="Intern"
+          company="Guam Economic Development Authority"
+          date="Jun 2022 - Aug 2022"
         >
           <li>Collaborated with peers on game design projects</li>
           <li>Participated in weekly game jams and hackathons</li>
