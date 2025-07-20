@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import InvestmentCharts from "./InvestmentCharts";
 
 export interface Investment {
   shares: number;
@@ -84,29 +85,8 @@ const InvestmentPrices = () => {
   return (
     <>
       {shareBadges}
-      <div className="row mt-3">
-        <div className="col-md-6">
-          <h6>Initial Investment Cost:</h6>
-          <ul className="list-unstyled">
-            {initialInvestmentsCost.map(({ symbol, shares, avgCost }) => (
-              <li key={symbol}>
-                {symbol}: {shares} shares @ ${avgCost.toFixed(2)} = $
-                {(shares * avgCost).toFixed(2)}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="col-md-6">
-          <h6>Current Stock Prices:</h6>
-          <ul className="list-unstyled">
-            {stockPrices.map(({ symbol, price }) => (
-              <li key={symbol}>
-                {symbol}: ${price.toFixed(2)}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="d-flex justify-content-center gap-3">
+        <InvestmentCharts />
       </div>
     </>
   );
