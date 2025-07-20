@@ -1,5 +1,6 @@
-import InvestmentStats from "./InvestmentStats";
+import InvestmentPrices from "./InvestmentPrices";
 
+// Your Investments:
 export const investmentsCost: [number, string, number][] = [
   [23, "AAPL", 176.58],
   [32, "AFRM", 52.48],
@@ -27,7 +28,7 @@ const InvestmentList = () => {
               </span>
             ))}
           </h5>
-          <InvestmentStats />
+          <InvestmentPrices />
         </li>
       </ul>
     </>
