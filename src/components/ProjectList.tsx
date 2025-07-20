@@ -45,6 +45,7 @@ const ProjectList = () => {
             My portfolio website built using React, Node, and Bootstrap.
             Features a lightweight backend for handling secure API requests for
             displaying live statistics of my brokerage account performance.
+            Deployed with Vercel.
           </ProjectEntry>
           <ProjectEntry
             title="Class Tracker"
