@@ -86,7 +86,10 @@ const InvestmentPrices = () => {
     <>
       {shareBadges}
       <div className="d-flex justify-content-center gap-3">
-        <InvestmentCharts />
+        <InvestmentCharts
+          investments={initialInvestmentsCost}
+          stockPrices={stockPrices}
+        />
       </div>
     </>
   );
