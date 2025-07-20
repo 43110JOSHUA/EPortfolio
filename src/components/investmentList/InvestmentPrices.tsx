@@ -62,21 +62,19 @@ const InvestmentPrices = () => {
     return (
       <>
         {shareBadges}
-        <div className="d-flex justify-content-center align-items-center mt-3">
-          <div className="spinner-border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </div>
-          <span className="ms-2">Fetching stock prices...</span>
+        <div className="d-flex justify-content-center gap-3">
+          <div className="spinner-border" role="status" />
+          <p>Fetching stock prices...</p>
         </div>
       </>
     );
   }
 
-  if (!stockPrices || stockPrices.length === 0) {
+  if (!stockPrices.length) {
     return (
       <>
         {shareBadges}
-        <div className="text-center text-danger mt-3">
+        <div className="text-center text-danger">
           No stock prices available.
         </div>
       </>
