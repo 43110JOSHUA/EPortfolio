@@ -92,11 +92,6 @@ const InvestmentCharts = ({
           "rgba(75, 192, 192, 0.6)",
           isProfit ? "rgba(76, 175, 80, 0.6)" : "rgba(244, 67, 54, 0.6)",
         ],
-        borderColor: [
-          "rgba(75, 192, 192, 1)",
-          isProfit ? "rgba(76, 175, 80, 1)" : "rgba(244, 67, 54, 1)",
-        ],
-        borderWidth: 2,
       },
     ],
   };
@@ -117,22 +112,21 @@ const InvestmentCharts = ({
   };
 
   return (
-    <>
-      <div className="flex-container justify-content-center d-flex flex-wrap gap-5">
-        <div
-          className="dataCard InitialvsCurrentbyShare"
-          style={{ width: "80vw", height: "250px" }}
-        >
-          <Bar data={chartConfig} options={options} />
-        </div>
-        <div
-          className="dataCard InitialvsCurrentbyShare"
-          style={{ width: "80vw", height: "250px" }}
-        >
-          <Doughnut data={doughnutConfig} options={doughnutOptions} />
-        </div>
+    <div className="flex-container justify-content-center d-flex flex-wrap gap-5">
+      <div
+        className="dataCard InitialvsCurrentbyShare"
+        style={{ width: "65vw", height: "300px" }}
+      >
+        <Bar data={chartConfig} options={options} />
       </div>
-    </>
+
+      <div
+        className="dataCard InitialvsCurrentbyShare"
+        style={{ width: "300px", height: "300px" }}
+      >
+        <Doughnut data={doughnutConfig} options={doughnutOptions} />
+      </div>
+    </div>
   );
 };
 
