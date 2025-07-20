@@ -11,6 +11,7 @@ const ProjectList = () => {
             year="2025"
             tools={[
               ["Next.js", "warning"],
+              ["Node.js", "success"],
               ["FireBase", "danger"],
               ["Bootstrap", "info"],
             ]}
@@ -32,7 +33,7 @@ const ProjectList = () => {
             year="2025"
             tools={[
               ["React.js", "warning"],
-              ["Axios", "secondary"],
+              ["Node.js", "success"],
               ["Bootstrap", "info"],
             ]}
             onClick={() =>
