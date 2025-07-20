@@ -25,7 +25,17 @@ const InvestmentPrices = () => {
     fetchStockPrices();
   }, []);
 
-  if (loading) return <div>Loading stock prices...</div>;
+  if (loading)
+    return (
+      <div className="d-flex justify-content-center gap-2">
+        <div className="spinner-border" role="status" />
+        Fetching stock prices...
+      </div>
+    );
+  if (!stockPrices.length)
+    return (
+      <div className="text-center text-danger">No stock prices available.</div>
+    );
 
   return (
     <div>
