@@ -1,5 +1,5 @@
 // Creates charts given data from InvestmentPrices.tsx
-import { Chart as ChartJS } from "chart.js/auto";
+import "chart.js/auto";
 import { Bar, Doughnut } from "react-chartjs-2";
 import type { Investment } from "./InvestmentPrices";
 
@@ -17,6 +17,11 @@ const InvestmentCharts = ({
   investments,
   stockPrices,
 }: InvestmentChartsProps) => {
+  // Color variables
+  const yellowColor = "rgba(255, 210, 0, 0.8)";
+  const redColor = "rgba(239, 68, 68, 0.8)";
+  const blueColor = "rgba(0, 100, 164, 0.8)";
+
   // Create a map for quick price lookup
   const priceMap = new Map(
     stockPrices.map((stock) => [stock.symbol, stock.price])
@@ -41,14 +46,14 @@ const InvestmentCharts = ({
       {
         label: "Total Purchase Price",
         data: chartData.map((data) => data.totalPurchasePrice),
-        backgroundColor: "rgba(255, 99, 132, 0.6)",
-        borderColor: "rgba(255, 99, 132, 1)",
+        backgroundColor: blueColor,
+        border: 0,
       },
       {
         label: "Current Worth",
         data: chartData.map((data) => data.currentWorth),
-        backgroundColor: "rgba(54, 162, 235, 0.6)",
-        borderColor: "rgba(54, 162, 235, 1)",
+        backgroundColor: yellowColor,
+        border: 0,
       },
     ],
   };
@@ -88,10 +93,8 @@ const InvestmentCharts = ({
     datasets: [
       {
         data: [totalPurchasePrice, Math.abs(totalGainLoss)],
-        backgroundColor: [
-          "rgba(75, 192, 192, 0.6)",
-          isProfit ? "rgba(76, 175, 80, 0.6)" : "rgba(244, 67, 54, 0.6)",
-        ],
+        backgroundColor: [blueColor, isProfit ? yellowColor : redColor],
+        borderWidth: 0,
       },
     ],
   };
