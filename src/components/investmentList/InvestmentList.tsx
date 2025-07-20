@@ -10,9 +10,8 @@ const InvestmentList = () => {
         <li className="list-group-item d-flex flex-column gap-3 p-3">
           <InvestmentPrices />
           <small className="text-center">
-            Backend handles API calls to finnhub.io for live stock price updates
-            then posts results to a local port which the frontend fetches and
-            displays. (Axios, Express, Cors, Dotenv) Note: Limit 3 calls per
+            Backend handles secure API calls to finnhub.io for live stock price
+            updates (Axios, Express, Cors, Dotenv) Note: Limit 3 calls per
             second.
           </small>
         </li>
