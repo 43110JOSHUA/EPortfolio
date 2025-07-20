@@ -22,11 +22,13 @@ const ProjectList = () => {
               )
             }
           >
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content. Some quick example text to build on the
-            card title and make up the bulk of the card’s content. Some quick
-            example text to build on the card title and make up the bulk of the
-            card’s content.
+            A web platform connecting organizations and idea posters with
+            aspiring developers. Built to help individuals and groups post
+            software ideas they want implemented, allowing students and
+            freelance coders to submit GitHub repo links under each project for
+            experience and visibility. Includes email-based account creation for
+            posters, public project listings, and submission tracking with email
+            confirmations.
           </ProjectEntry>
           <ProjectEntry
             title="Portfolio Website"
@@ -40,11 +42,9 @@ const ProjectList = () => {
               window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
             }
           >
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content. Some quick example text to build on the
-            card title and make up the bulk of the card’s content. Some quick
-            example text to build on the card title and make up the bulk of the
-            card’s content.
+            My portfolio website built using React, Node, and Bootstrap.
+            Features a lightweight backend for handling secure API requests for
+            displaying live statistics of my brokerage account performance.
           </ProjectEntry>
           <ProjectEntry
             title="Class Tracker"
@@ -60,11 +60,10 @@ const ProjectList = () => {
               )
             }
           >
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content. Some quick example text to build on the
-            card title and make up the bulk of the card’s content. Some quick
-            example text to build on the card title and make up the bulk of the
-            card’s content.
+            A simple Python + SQLite3 program for storing and analyzing
+            information about your friends or classmates using a local database.
+            Users can add, edit, and delete entries, as well as search for
+            specific individuals and calculate simple statistics.
           </ProjectEntry>
           <ProjectEntry
             title="Taipei MRT"
@@ -81,11 +80,8 @@ const ProjectList = () => {
               )
             }
           >
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content. Some quick example text to build on the
-            card title and make up the bulk of the card’s content. Some quick
-            example text to build on the card title and make up the bulk of the
-            card’s content.
+            A Recreation of the Taipei MRT system on Roblox. Amassed over 25,000
+            visits and maintains an average of 30+ active players daily.
           </ProjectEntry>
         </li>
       </ul>
