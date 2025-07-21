@@ -70,6 +70,14 @@ const InvestmentCharts = ({
       },
     },
     scales: {
+      x: {
+        ticks: {
+          font: {
+            size: 10,
+          },
+          maxRotation: 60,
+        },
+      },
       y: {
         beginAtZero: true,
       },
