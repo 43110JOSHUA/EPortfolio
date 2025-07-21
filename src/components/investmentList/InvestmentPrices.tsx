@@ -1,6 +1,5 @@
 // Fetches stock prices from the backend API and displays investment stat
-const BACKEND_URL =
-  "https://eport-backend-dshub3bkabggdtga.westus2-01.azurewebsites.net/";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 import { useEffect, useState } from "react";
 import axios from "axios";
