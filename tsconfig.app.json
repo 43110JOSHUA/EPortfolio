@@ -6,7 +6,7 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "exclude": ["safetyHandler.js", "node_modules"],
+    "exclude": ["developmentBackend.js"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
