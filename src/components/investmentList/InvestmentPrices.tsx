@@ -1,4 +1,6 @@
-// Fetches stock prices from the backend API and displays investment stats
+// Fetches stock prices from the backend API and displays investment stat
+const BACKEND_URL =
+  "https://eport-backend-dshub3bkabggdtga.westus2-01.azurewebsites.net/";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -47,7 +49,7 @@ const InvestmentPrices = () => {
   useEffect(() => {
     const fetchStockPrices = async () => {
       try {
-        const response = await axios.get(import.meta.env.VITE_BACKEND_URL);
+        const response = await axios.get(BACKEND_URL);
         setStockPrices(response.data);
       } catch (error) {
         console.error("Error fetching stock prices:", error);
