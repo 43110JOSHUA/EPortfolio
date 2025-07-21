@@ -47,7 +47,7 @@ const InvestmentPrices = () => {
   useEffect(() => {
     const fetchStockPrices = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/stock-prices");
+        const response = await axios.get(import.meta.env.VITE_BACKEND_URL);
         setStockPrices(response.data);
       } catch (error) {
         console.error("Error fetching stock prices:", error);
