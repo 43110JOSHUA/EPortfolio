@@ -42,10 +42,10 @@ const ProjectList = () => {
               window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
             }
           >
-            My portfolio website built using React, Node, and Bootstrap.
-            Features a lightweight backend for handling secure API requests for
-            displaying live statistics of my brokerage account performance.
-            Deployed with Azure.
+            My full-stack portfolio website built with a React frontend and a
+            Node.js backend. Features live statistics of my brokerage account
+            performance through a lightweight separately-hosted backend for
+            handling secure API requests. Deployed with Azure.
           </ProjectEntry>
           <ProjectEntry
             title="Class Tracker"
