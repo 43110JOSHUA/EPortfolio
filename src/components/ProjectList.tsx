@@ -23,11 +23,11 @@ const ProjectList = () => {
             }
           >
             A web platform connecting organizations and idea posters with
-            aspiring developers. Built to help individuals and groups post
-            software ideas they want implemented, allowing students and
-            freelance coders to submit GitHub repo links under each project for
-            experience and visibility. Includes email-based account creation for
-            posters, public project listings, and submission tracking with email
+            aspiring developers. Companies, professionals, or individuals can
+            post software ideas they want implemented, allowing students and
+            freelance coders to submit solutions in the form of public github
+            repositories. Includes email-based account creation for posters,
+            public project listings, and submission tracking with email
             confirmations.
           </ProjectEntry>
           <ProjectEntry
@@ -61,10 +61,10 @@ const ProjectList = () => {
               )
             }
           >
-            A simple Python + SQLite3 program for storing and analyzing
-            information about your friends or classmates using a local database.
-            Users can add, edit, and delete entries, as well as search for
-            specific individuals and calculate simple statistics.
+            A Python and SQLite3 program for storing and analyzing information
+            about your friends or classmates using a local database. Users can
+            add, edit, and delete entries, search for specific individuals, and
+            calculate simple statistics.
           </ProjectEntry>
           <ProjectEntry
             title="Taipei MRT"
