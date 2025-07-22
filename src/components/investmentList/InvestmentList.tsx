@@ -16,8 +16,7 @@ const InvestmentList = () => {
           <InvestmentPrices />
           <small className="text-center">
             Backend handles secure API calls to finnhub.io for live stock price
-            updates (Axios, Express, Cors, Dotenv) Note: Limit 3 calls per
-            second.
+            updates. Note: Limit 3 calls per second.
           </small>
         </li>
       </ul>
