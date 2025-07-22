@@ -118,9 +118,7 @@ const InvestmentCharts = ({
       },
       title: {
         display: true,
-        text: `Total Portfolio: ${isProfit ? "Profit" : "Loss"} $${Math.abs(
-          totalGainLoss
-        ).toLocaleString()}`,
+        text: `Total Portfolio Worth: $${totalCurrentWorth.toLocaleString()}`,
       },
     },
   };
