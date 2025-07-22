@@ -24,7 +24,10 @@ const InvestmentCharts = ({
 
   // Create a map for quick price lookup
   const priceMap = new Map(
-    stockPrices.map((stock) => [stock.symbol, stock.price])
+    stockPrices.map((stock) => [
+      stock.symbol,
+      parseFloat(stock.price.toFixed(2)),
+    ])
   );
 
   // Calculate data for the chart
