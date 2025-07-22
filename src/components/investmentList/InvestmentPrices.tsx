@@ -1,5 +1,6 @@
-// Fetches stock prices from the backend API and displays investment stat
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// Fetches stock prices from the backend API and displays investment stats
+const BACKEND_URL =
+  import.meta.env.VITE_BACKEND_URL || "http://localhost:8000/stock-prices";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
