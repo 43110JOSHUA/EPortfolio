@@ -27,8 +27,7 @@ const ProjectList = () => {
             post software ideas they want implemented, allowing students and
             freelance coders to submit solutions in the form of public github
             repositories. Includes email-based account creation for posters,
-            public project listings, and submission tracking with email
-            confirmations.
+            public project listings, and submission tracking.
           </ProjectEntry>
           <ProjectEntry
             title="Portfolio Website"

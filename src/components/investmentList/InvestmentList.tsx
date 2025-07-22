@@ -7,7 +7,7 @@ const InvestmentList = () => {
     <>
       <div className="flex-container justify-content-center align-items-center d-flex flex-wrap gap-2 pb-2">
         <h5 className="text-center">My Investments</h5>
-        <button className="btn btn-outline-secondary disabled mb-2 align-items-center d-flex gap-2">
+        <button className="btn btn-sm btn-outline-secondary disabled mb-2 align-items-center d-flex gap-2">
           Live <div className="spinner-grow spinner-grow-sm text-danger"></div>
         </button>
       </div>
