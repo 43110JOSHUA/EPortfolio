@@ -71,6 +71,15 @@ const InvestmentCharts = ({
         display: true,
         text: "Purchase Price vs Current Worth",
       },
+      tooltip: {
+        callbacks: {
+          label: function (context: any) {
+            const label = context.dataset.label || "";
+            const value = context.parsed.y;
+            return `${label}: $${value.toFixed(2)}`;
+          },
+        },
+      },
     },
     scales: {
       x: {
@@ -83,6 +92,11 @@ const InvestmentCharts = ({
       },
       y: {
         beginAtZero: true,
+        ticks: {
+          callback: function (value: any) {
+            return "$" + parseFloat(value).toFixed(2);
+          },
+        },
       },
     },
   };
@@ -118,7 +132,16 @@ const InvestmentCharts = ({
       },
       title: {
         display: true,
-        text: `Total Portfolio Worth: $${totalCurrentWorth.toLocaleString()}`,
+        text: `Total Portfolio Worth: $${totalCurrentWorth.toFixed(2)}`,
+      },
+      tooltip: {
+        callbacks: {
+          label: function (context: any) {
+            const label = context.label || "";
+            const value = context.parsed;
+            return `${label}: $${value.toFixed(2)}`;
+          },
+        },
       },
     },
   };
