@@ -11,7 +11,6 @@ const ProjectList = () => {
             year="2025"
             tools={[
               ["Next.js", "warning"],
-              ["Node.js", "success"],
               ["FireBase", "danger"],
               ["Bootstrap", "info"],
             ]}
@@ -42,9 +41,9 @@ const ProjectList = () => {
             }
           >
             My full-stack portfolio website built with a React frontend and a
-            separately-hosted Node.js backend. Features live statistics of my
-            brokerage account performance through a lightweight backend for
-            handling secure API requests. Deployed with Microsoft Azure.
+            lightweight, separately-hosted Node.js backend. Features live
+            statistics of my brokerage account performance through the backend
+            for handling secure API requests. Deployed with Microsoft Azure.
           </ProjectEntry>
           <ProjectEntry
             title="Class Tracker"
@@ -60,7 +59,7 @@ const ProjectList = () => {
               )
             }
           >
-            A Python and SQLite3 program for storing and analyzing information
+            A Python + SQLite3 program for storing and analyzing information
             about your friends or classmates using a local database. Users can
             add, edit, and delete entries, search for specific individuals, and
             calculate simple statistics.
