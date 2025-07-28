@@ -28,8 +28,8 @@ const initialInvestmentsCost: Investment[] = [
   { shares: 1, symbol: "INTU", avgCost: 600.02 },
   { shares: 6, symbol: "META", avgCost: 591.3 },
   { shares: 15, symbol: "MSFT", avgCost: 376 },
+  { shares: 19, symbol: "NVDA", avgCost: 174.56 },
   { shares: 9, symbol: "SN", avgCost: 106.71 },
-  { shares: 4, symbol: "SPGI", avgCost: 535.05 },
 ];
 
 const shareBadges = (
