@@ -52,7 +52,7 @@ const InvestmentPrices = () => {
         const response = await axios.get(BACKEND_URL);
         setStockPrices(response.data);
       } catch (error) {
-        console.error("Error fetching stock prices:", error);
+        console.error("Error fetching stock prices.");
       } finally {
         setLoading(false);
       }
