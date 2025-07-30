@@ -101,7 +101,3 @@ portfolio_website/
 ├── developmentBackend.js
 └── package.json
 ```
-
-## License
-
-This project is private and proprietary.
