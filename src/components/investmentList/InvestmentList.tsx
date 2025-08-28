@@ -15,9 +15,8 @@ const InvestmentList = () => {
         <li className="list-group-item d-flex flex-column gap-3 p-3">
           <InvestmentPrices />
           <small className="text-center">
-            Backend handles secure API calls to finnhub.io for live stock price
-            updates. Note: First fetch may take a while as Azure wakes up
-            backend from sleep.
+            Note: First fetch may take a while as Azure wakes up backend from
+            sleep.
           </small>
         </li>
       </ul>
