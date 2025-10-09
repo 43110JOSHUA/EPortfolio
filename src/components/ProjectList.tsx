@@ -7,26 +7,21 @@ const ProjectList = () => {
       <ul className="list-group">
         <li className="list-group-item d-flex flex-column gap-3 p-3">
           <ProjectEntry
-            title="Charity Code"
+            title="Charity Coder"
             year="2025"
             tools={[
               ["Next.js", "warning"],
               ["FireBase", "danger"],
               ["Bootstrap", "info"],
             ]}
-            onClick={() =>
-              window.open(
-                "https://github.com/43110JOSHUA/CharityCode",
-                "_blank"
-              )
-            }
+            onClick={() => window.open("https://charitycoder.com/", "_blank")}
           >
             A web platform connecting organizations and idea posters with
             aspiring developers. Companies, professionals, or individuals can
             post software ideas they want implemented, allowing students and
             freelance coders to submit solutions in the form of public github
-            repositories. Includes email-based account creation for posters,
-            public project listings, and submission tracking.
+            repositories. Includes gmail login for posters, live post feed,
+            personalized dashboards, and more.
           </ProjectEntry>
           <ProjectEntry
             title="Portfolio Website"
