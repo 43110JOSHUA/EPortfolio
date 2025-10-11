@@ -16,7 +16,7 @@ const InvestmentList = () => {
           <InvestmentPrices />
           <small className="text-center">
             Note: First fetch may take a while as Azure wakes up backend from
-            sleep.
+            sleep. (Free plan doesn't constantly run)
           </small>
         </li>
       </ul>
