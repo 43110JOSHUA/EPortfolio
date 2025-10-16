@@ -41,7 +41,7 @@ const ProjectList = () => {
             for handling secure API requests. Deployed with Microsoft Azure.
           </ProjectEntry>
           <ProjectEntry
-            title="Class Tracker"
+            title="Student Database"
             year="2025"
             tools={[
               ["Python", "success"],
