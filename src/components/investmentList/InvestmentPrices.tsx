@@ -1,6 +1,6 @@
 // Fetches stock prices from the backend API and displays investment stats
-const BACKEND_URL =
-  import.meta.env.VITE_BACKEND_URL || "http://localhost:8000/stock-prices";
+// const BACKEND_URL =
+//   import.meta.env.VITE_BACKEND_URL || "http://localhost:8000/stock-prices";
 const API_KEY = import.meta.env.VITE_FINNHUB_API_KEY || "";
 
 import { useEffect, useState } from "react";
@@ -57,7 +57,8 @@ const InvestmentPrices = () => {
           .then(response => ({
             symbol,
             price: response.data.c
-          })));
+          }))
+      );
         const response = await Promise.all(promises);
         setStockPrices(response);
 
