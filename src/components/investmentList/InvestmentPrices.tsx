@@ -1,7 +1,7 @@
 // Fetches stock prices from the backend API and displays investment stats
 // const BACKEND_URL =
 //   import.meta.env.VITE_BACKEND_URL || "http://localhost:8000/stock-prices";
-const API_KEY = import.meta.env.VITE_FINNHUB_API_KEY || "";
+const API_KEY = import.meta.env.FINNHUB_API_KEY || "";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
