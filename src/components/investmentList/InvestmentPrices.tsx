@@ -1,6 +1,7 @@
 // Fetches stock prices from the backend API and displays investment stats
 const BACKEND_URL =
   import.meta.env.VITE_BACKEND_URL || "http://localhost:8000/stock-prices";
+const API_KEY = import.meta.env.VITE_FINNHUB_API_KEY || "";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -30,6 +31,8 @@ const initialInvestmentsCost: Investment[] = [
   { shares: 15, symbol: "MSFT", avgCost: 376 },
   { shares: 19, symbol: "NVDA", avgCost: 174.56 },
 ];
+const symbols = ["AAPL","AFRM","AMZN","ASML","COST","GOOGL","INTU","META","MSFT","NVDA"];
+
 
 const shareBadges = (
   <h5 className="container-fluid justify-content-center d-flex flex-wrap gap-1 p-0">
@@ -48,8 +51,20 @@ const InvestmentPrices = () => {
   useEffect(() => {
     const fetchStockPrices = async () => {
       try {
-        const response = await axios.get(BACKEND_URL);
-        setStockPrices(response.data);
+        // -----Frontend fetches-----
+        const promises = symbols.map(symbol =>
+        axios.get(`https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${API_KEY}`)
+          .then(response => ({
+            symbol,
+            price: response.data.c
+          })));
+        const response = await Promise.all(promises);
+        setStockPrices(response);
+
+        // -----Backend fetches-----
+        // const response = await axios.get(BACKEND_URL);
+        // setStockPrices(response.data);
+
       } catch (error) {
         console.error("Error fetching stock prices.");
       } finally {
