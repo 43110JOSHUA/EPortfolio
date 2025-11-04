@@ -7,6 +7,31 @@ const ProjectList = () => {
       <ul className="list-group">
         <li className="list-group-item d-flex flex-column gap-3 p-3">
           <ProjectEntry
+            title="Shield Message"
+            year="2025"
+            tools={[
+              ["Next.js", "warning"],
+              ["PostgreSQL", "primary"],
+              ["Firebase", "danger"],
+              ["React Email", "success"],
+              ["Bootstrap", "info"],
+            ]}
+            onClick={() =>
+              window.open(
+                "https://shieldmessage.com",
+                "_blank"
+              )
+            }
+          >
+            A subscription-based failsafe messaging system where users create
+            messages that automatically send via email after a countdown expires
+            unless they check in to reset the timer. Features Google OAuth
+            authentication, PostgreSQL database with full CRUD operations,
+            automated cron job processing for expired messages, and professional
+            email templates with Resend API integration. Built with Next.js
+            server actions and designed for Azure deployment.
+          </ProjectEntry>
+          <ProjectEntry
             title="Charity Coder"
             year="2025"
             tools={[
