@@ -13,7 +13,7 @@ const ProjectList = () => {
               ["Next.js", "warning"],
               ["PostgreSQL", "primary"],
               ["Firebase", "danger"],
-              ["React Email", "success"],
+              ["Resend", "secondary"],
               ["Bootstrap", "info"],
             ]}
             onClick={() =>
