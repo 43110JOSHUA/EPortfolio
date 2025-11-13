@@ -1,0 +1,16 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+  "nextjs": #000000,
+  "postgre": #336791,
+  "zerob": #af0cfb,
+  "stripe": #635BFF,
+  "bootstrap": #7952b3,
+  "nodejs": #339933,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// include all of Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";

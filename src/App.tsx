@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./scss/custom.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
 import Header from "./components/Header";

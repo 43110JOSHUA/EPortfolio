@@ -10,34 +10,34 @@ const ProjectList = () => {
             title="Shield Message"
             year="2025"
             tools={[
-              ["Next.js", "warning"],
-              ["PostgreSQL", "primary"],
-              ["Firebase", "danger"],
-              ["Resend", "secondary"],
-              ["Bootstrap", "info"],
+              ["Next.js", "nextjs"],
+              ["PostgreSQL", "postgre"],
+              ["Firebase", "warning"],
+              ["ZeroBounce", "zerob"],
+              ["Resend", "nextjs"],
+              ["Twilio", "danger"],
+              ["Stripe", "stripe"],
+              ["Bootstrap", "bootstrap"],
             ]}
-            onClick={() =>
-              window.open(
-                "https://shieldmessage.com",
-                "_blank"
-              )
-            }
+            onClick={() => window.open("https://shieldmessage.com", "_blank")}
           >
-            A subscription-based failsafe messaging system where users create
-            messages that automatically send via email after a countdown expires
-            unless they check in to reset the timer. Features Google OAuth
-            authentication, PostgreSQL database with full CRUD operations,
-            automated cron job processing for expired messages, and professional
-            email templates with Resend API integration. Built with Next.js
-            server actions and designed for Azure deployment.
+            A subscription-based deadman's switch messaging platform that
+            automatically delivers failsafe messages to designated recipients
+            when users fail to check in within a specified timeframe. Features
+            include Firebase authentication (Google OAuth and email/password),
+            real-time email validation with ZeroBounce API, PostgreSQL database
+            with full CRUD operations, Stripe payment processing for premium
+            subscriptions, and automated message delivery via Resend (email) and
+            Twilio (SMS/MMS for premium users). Built with Next.js Server
+            Actions and designed for Azure deployment.
           </ProjectEntry>
           <ProjectEntry
             title="Charity Coder"
             year="2025"
             tools={[
-              ["Next.js", "warning"],
-              ["FireBase", "danger"],
-              ["Bootstrap", "info"],
+              ["Next.js", "nextjs"],
+              ["FireBase", "warning"],
+              ["Bootstrap", "bootstrap"],
             ]}
             onClick={() => window.open("https://charitycoder.com/", "_blank")}
           >
@@ -52,9 +52,9 @@ const ProjectList = () => {
             title="Portfolio Website"
             year="2025"
             tools={[
-              ["React.js", "warning"],
-              ["Node.js", "success"],
-              ["Bootstrap", "info"],
+              ["React.js", "info"],
+              ["Node.js", "nodejs"],
+              ["Bootstrap", "bootstrap"],
             ]}
             onClick={() =>
               window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
