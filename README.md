@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-https://black-ocean-0b150ff1e.1.azurestaticapps.net/
+https://joshuaforguam.com/
 
 A full-stack portfolio website built with React and Node.js, showcasing my projects, experience, and technical skills. Features real-time investment portfolio tracking with live stock data visualization, responsive design, and secure API integration.
 
