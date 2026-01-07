@@ -99,7 +99,7 @@ const ProjectList = () => {
               )
             }
           >
-            A Recreation of the Taipei MRT system on Roblox. Amassed over 25,000
+            A recreation of the Taipei MRT system on Roblox. Amassed over 30,000
             visits and maintains an average of 30+ active players daily.
           </ProjectEntry>
         </li>

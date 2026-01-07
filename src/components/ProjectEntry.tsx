@@ -8,8 +8,8 @@ interface Props {
 
 const ProjectEntry = ({ title, year, tools, children, onClick }: Props) => {
   return (
-    <button className="btn project-entry-btn text-start p-0" onClick={onClick}>
-      <div className="card">
+    <button className="btn project-entry-btn text-start border p-0" onClick={onClick}>
+      <div className="card border-0">
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center">
             <h5 className="text-primary">{title}</h5>
