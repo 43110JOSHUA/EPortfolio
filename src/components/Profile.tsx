@@ -11,7 +11,7 @@ const Profile = () => {
           style={{ width: "260px", height: "260px" }}
         />
         <div
-          className="bg-light rounded-circle position-absolute border border-2"
+          className="bg-body-tertiary rounded-circle position-absolute border border-2"
           style={{
             width: "50px",
             height: "50px",
