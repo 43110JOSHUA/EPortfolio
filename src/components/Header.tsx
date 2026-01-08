@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import profileImg from "../assets/RoundPP.png";
 import IconButton from "./IconButton";
 import Avatar from "./Avatar";
+import PageBorder from "./PageBorder";
 
 const Header = () => {
   const [colorScheme, setColorScheme] = useState("light");
@@ -20,6 +21,7 @@ const Header = () => {
 
   return (
     <header className="row bg-opacity-75 bg-body-tertiary border-bottom sticky-top py-2 px-2 px-md-3">
+      <PageBorder>
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex d-wrap gap-2 align-items-center">
           <Avatar src={profileImg} />
@@ -41,6 +43,7 @@ const Header = () => {
           <IconButton icon={themeIcon} onClick={toggleTheme} />
         </div>
       </div>
+      </PageBorder>
     </header>
   );
 };
