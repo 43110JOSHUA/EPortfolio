@@ -22,7 +22,7 @@ interface StockPrice {
 const initialInvestmentsCost: Investment[] = [
   { shares: 23, symbol: "AAPL", avgCost: 176.58 },
   { shares: 32, symbol: "AFRM", avgCost: 52.48 },
-  { shares: 66, symbol: "AMZN", avgCost: 177.28 },
+  { shares: 71, symbol: "AMZN", avgCost: 180.85 },
   { shares: 1, symbol: "ASML", avgCost: 736.75 },
   { shares: 1, symbol: "COST", avgCost: 926.46 },
   { shares: 42, symbol: "GOOGL", avgCost: 173.29 },

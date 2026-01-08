@@ -114,7 +114,7 @@ const InvestmentCharts = ({
   const isProfit = totalGainLoss >= 0;
 
   const doughnutConfig = {
-    labels: ["Initial Investment", isProfit ? "Profit" : "Loss"],
+    labels: ["Initial Investment", isProfit ? "Gain" : "Loss"],
     datasets: [
       {
         data: [totalPurchasePrice, Math.abs(totalGainLoss)],
