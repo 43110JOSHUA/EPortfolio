@@ -18,18 +18,17 @@ const ProjectList = () => {
               ["Twilio", "danger"],
               ["Stripe", "stripe"],
               ["Bootstrap", "bootstrap"],
+              ["Azure", "primary"],
             ]}
             onClick={() => window.open("https://shieldmessage.com", "_blank")}
           >
-            A subscription-based deadman's switch messaging platform that
-            automatically delivers failsafe messages to designated recipients
-            when users fail to check in within a specified timeframe. Features
-            include Firebase authentication (Google OAuth and email/password),
-            real-time email validation with ZeroBounce API, PostgreSQL database
-            with full CRUD operations, Stripe payment processing for premium
-            subscriptions, and automated message delivery via Resend (email) and
-            Twilio (SMS/MMS for premium users). Built with Next.js Server
-            Actions and designed for Azure deployment.
+            A SaaS platform providing users with a digital deadman's switch that
+            automatically delivers their failsafe messages to designated
+            recipients when users fail to check in within a specified timeframe.
+            Users can create messages with custom check-in intervals to be sent
+            via email or SMS. The platform validates recipient emails in
+            real-time and offers both free and premium subscription tiers with
+            enhanced features like multimedia messaging and priority delivery.
           </ProjectEntry>
           <ProjectEntry
             title="Charity Coder"
@@ -38,6 +37,7 @@ const ProjectList = () => {
               ["Next.js", "nextjs"],
               ["FireBase", "warning"],
               ["Bootstrap", "bootstrap"],
+              ["Azure", "primary"],
             ]}
             onClick={() => window.open("https://charitycoder.com/", "_blank")}
           >
@@ -55,14 +55,14 @@ const ProjectList = () => {
               ["React.js", "info"],
               ["Node.js", "nodejs"],
               ["Bootstrap", "bootstrap"],
+              ["Azure", "primary"],
             ]}
             onClick={() =>
               window.open("https://github.com/43110JOSHUA/EPortfolio", "_blank")
             }
           >
-            My full-stack portfolio website built with a React frontend and a
-            lightweight, separately-hosted Node.js backend. Features live
-            statistics of my brokerage account. Deployed with Microsoft Azure.
+            My full-stack portfolio website showcasing my projects, experience,
+            technical skills, and statistics from my investment portfolio. 
           </ProjectEntry>
           <ProjectEntry
             title="Student Database"
@@ -78,10 +78,11 @@ const ProjectList = () => {
               )
             }
           >
-            A Python + SQLite3 program for storing and analyzing information
-            about your friends or classmates using a local database. Users can
-            add, edit, and delete entries, search for specific individuals, and
-            calculate simple statistics.
+            A local database application for storing and analyzing information
+            about friends and classmates. Users can manage contact details,
+            track shared classes or projects, search through their network, and
+            generate insights through statistical analysis. All data is stored
+            securely on the user's local machine.
           </ProjectEntry>
           <ProjectEntry
             title="Taipei MRT"
@@ -98,8 +99,9 @@ const ProjectList = () => {
               )
             }
           >
-            A recreation of the Taipei MRT system on Roblox. Amassed over 30,000
-            visits and maintains an average of 30+ active players daily.
+            An immersive recreation of the Taipei Metro system on Roblox.
+            Amassed over 30,000 visits and maintains an average of 30+ active
+            players daily.
           </ProjectEntry>
         </li>
       </ul>

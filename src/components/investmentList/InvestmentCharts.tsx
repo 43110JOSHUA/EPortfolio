@@ -150,7 +150,7 @@ const InvestmentCharts = ({
     <div className="flex-container justify-content-center d-flex flex-wrap gap-5">
       <div
         className="dataCard InitialvsCurrentbyShare"
-        style={{ width: "60vw", height: "300px" }}
+        style={{ width: "55vw", height: "300px" }}
       >
         <Bar data={chartConfig} options={options} />
       </div>
