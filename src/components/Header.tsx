@@ -19,7 +19,7 @@ const Header = () => {
   }, [colorScheme]);
 
   return (
-    <header className="row bg-body-tertiary border-bottom sticky-top py-2 px-2 px-md-3">
+    <header className="row bg-opacity-75 bg-body-tertiary border-bottom sticky-top py-2 px-2 px-md-3">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex d-wrap gap-2 align-items-center">
           <Avatar src={profileImg} />

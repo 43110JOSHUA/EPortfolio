@@ -62,8 +62,7 @@ const ProjectList = () => {
           >
             My full-stack portfolio website built with a React frontend and a
             lightweight, separately-hosted Node.js backend. Features live
-            statistics of my brokerage account performance through the backend
-            for handling secure API requests. Deployed with Microsoft Azure.
+            statistics of my brokerage account. Deployed with Microsoft Azure.
           </ProjectEntry>
           <ProjectEntry
             title="Student Database"
