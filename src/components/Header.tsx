@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import profileImg from "../assets/IMG_3676.jpg";
+import profileImg from "../assets/RoundPP.png";
 import IconButton from "./IconButton";
 import Avatar from "./Avatar";
 
@@ -26,17 +26,16 @@ const Header = () => {
           <h5 className="pt-1 px-2">Joshua Tang / EPortfolio</h5>
         </div>
         <div className="d-flex gap-2">
-          <button
-            type="button"
-            className="btn text-secondary d-none d-md-block px-2"
-            style={{ fontSize: "1rem", border: "none" }}
-          >
-            FAQ
-          </button>
           <IconButton
             icon="bi bi-github"
             onClick={() =>
               window.open("https://github.com/43110JOSHUA", "_blank")
+            }
+          />
+          <IconButton
+            icon="bi bi-instagram"
+            onClick={() =>
+              window.open("https://www.instagram.com/joshua.t4n/", "_blank")
             }
           />
           <IconButton icon={themeIcon} onClick={toggleTheme} />
