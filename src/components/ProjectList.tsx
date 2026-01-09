@@ -41,8 +41,8 @@ const ProjectList = () => {
             ]}
             onClick={() => window.open("https://charitycoder.com/", "_blank")}
           >
-            A web platform connecting organizations and idea posters with
-            aspiring developers. Companies, professionals, or individuals can
+            A social platform connecting organizations and idea posters with
+           developers. Companies, professionals, or individuals can
             post software ideas they want implemented, allowing students and
             freelance coders to submit solutions in the form of public github
             repositories. Includes gmail login for posters, live post feed,
