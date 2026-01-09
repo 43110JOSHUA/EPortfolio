@@ -14,11 +14,11 @@ function App() {
       <Header />
       <PageBorder>
         <main className="row g-4 px-md-5 py-4">
-          <div className="col-12 col-md-4">
+          <div className="col-12 col-lg-4">
             <Profile />
             <ExperienceList />
           </div>
-          <div className="col-12 col-md-8">
+          <div className="col-12 col-lg-8">
             <ProjectList />
           </div>
         </main>

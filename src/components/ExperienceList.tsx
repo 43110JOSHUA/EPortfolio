@@ -3,8 +3,7 @@ import ExperienceEntry from "./ExperienceEntry";
 const ExperienceList = () => {
   return (
     <>
-      <h5 className="text-center pb-2"></h5>
-      <ul className="list-group">
+      <ul className="list-group" style={{minWidth: "260px"}}>
         <ExperienceEntry
           role="Learning Assistant"
           company="University of California Irvine"
