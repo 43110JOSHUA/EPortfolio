@@ -21,18 +21,26 @@ interface StockPrice {
 // # Shares, Company Symbol, Average Cost per Share. Dont forget to update .env
 const initialInvestmentsCost: Investment[] = [
   { shares: 23, symbol: "AAPL", avgCost: 176.58 },
-  { shares: 32, symbol: "AFRM", avgCost: 52.48 },
-  { shares: 71, symbol: "AMZN", avgCost: 180.85 },
+  { shares: 75, symbol: "AMZN", avgCost: 183.89 },
   { shares: 1, symbol: "ASML", avgCost: 736.75 },
-  { shares: 1, symbol: "COST", avgCost: 926.46 },
   { shares: 42, symbol: "GOOGL", avgCost: 173.29 },
   { shares: 2, symbol: "INTU", avgCost: 627.51 },
-  { shares: 10, symbol: "META", avgCost: 606.70 },
+  { shares: 10, symbol: "META", avgCost: 606.7 },
   { shares: 15, symbol: "MSFT", avgCost: 376 },
   { shares: 25, symbol: "NVDA", avgCost: 177.79 },
+  { shares: 11, symbol: "UNH", avgCost: 293.11 },
 ];
-const symbols = ["AAPL","AFRM","AMZN","ASML","COST","GOOGL","INTU","META","MSFT","NVDA"];
-
+const symbols = [
+  "AAPL",
+  "AMZN",
+  "ASML",
+  "GOOGL",
+  "INTU",
+  "META",
+  "MSFT",
+  "NVDA",
+  "UNH",
+];
 
 const shareBadges = (
   <h5 className="container-fluid justify-content-center d-flex flex-wrap gap-1 p-0">
@@ -52,12 +60,15 @@ const InvestmentPrices = () => {
     const fetchStockPrices = async () => {
       try {
         // -----Frontend fetches-----
-        const promises = symbols.map(symbol =>
-        axios.get(`https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${API_KEY}`)
-          .then(response => ({
-            symbol,
-            price: response.data.c
-          }))
+        const promises = symbols.map((symbol) =>
+          axios
+            .get(
+              `https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${API_KEY}`,
+            )
+            .then((response) => ({
+              symbol,
+              price: response.data.c,
+            })),
         );
         const response = await Promise.all(promises);
         setStockPrices(response);
@@ -65,7 +76,6 @@ const InvestmentPrices = () => {
         // -----Backend fetches-----
         // const response = await axios.get(BACKEND_URL);
         // setStockPrices(response.data);
-
       } catch (error) {
         console.error("Error fetching stock prices.");
       } finally {
