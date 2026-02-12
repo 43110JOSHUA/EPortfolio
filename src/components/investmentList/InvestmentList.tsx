@@ -15,8 +15,7 @@ const InvestmentList = () => {
         <li className="list-group-item d-flex flex-column gap-3 p-3">
           <InvestmentPrices />
           <small className="text-center">
-            Note: First fetch may take a while as Azure wakes up backend from
-            sleep. (Free plan doesn't constantly run)
+            Note: Stock prices are currently not being fetched through backend for speed (free Azure backend goes to sleep if inactive).
           </small>
         </li>
       </ul>
