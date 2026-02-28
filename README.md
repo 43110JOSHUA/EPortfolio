@@ -2,31 +2,26 @@
 
 https://joshuaforguam.com/
 
-A full-stack portfolio website built with React and Node.js, showcasing my projects, experience, and technical skills. Features real-time investment portfolio tracking with live stock data visualization, responsive design, and secure API integration.
+A full-stack portfolio website built with React and Node.js, showcasing my projects, experience, and technical skills. Features real-time investment portfolio tracking with live stock data visualization.
 
 ## Features
 
-- **Project Showcase**: Detailed project listings with technology stacks and GitHub links.
-- **Experience Timeline**: Professional experience.
-- **Responsive Design**: Optimized for devices of all sizes using Bootstrap.
+- **Project Showcase**
 - **Secure API Integration**: Separate backend for handling API requests to finnhub.io.
-- **Live Stock Data**: Real-time investment data with Chart.js visualizations.
+- **Live Stock Data**: Real-time investment performance.
 
 ## Tech Stack
 
 **Frontend:**
 
-- React 19 with TypeScript
-- Vite for build tooling
-- Bootstrap 5 for styling
-- Chart.js for data visualization
-- Axios for API requests
+- React 19
+- Vite
+- Bootstrap 5
+- Chart.js
 
 **Backend:**
 
-- Node.js with Express
-- CORS for cross-origin requests
-- Environment variable management with dotenv
+- Node.js
 
 ## Local Development Setup
 
