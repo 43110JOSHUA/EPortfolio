@@ -21,7 +21,7 @@ interface StockPrice {
 // # Shares, Company Symbol, Average Cost per Share. Dont forget to update .env
 const initialInvestmentsCost: Investment[] = [
   { shares: 23, symbol: "AAPL", avgCost: 176.58 },
-  { shares: 75, symbol: "AMZN", avgCost: 183.89 },
+  { shares: 80, symbol: "AMZN", avgCost: 209.23 },
   { shares: 1, symbol: "ASML", avgCost: 736.75 },
   { shares: 42, symbol: "GOOGL", avgCost: 173.29 },
   { shares: 2, symbol: "INTU", avgCost: 627.51 },
