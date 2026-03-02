@@ -11,7 +11,7 @@ const IconButton: React.FC<IconButtonProps> = ({
 }: IconButtonProps) => (
   <button
     type="button"
-    className={`btn btn-outline-secondary btn-icon px-2`}
+    className="btn btn-outline-secondary btn-icon px-2"
     style={{ fontSize: "1rem" }}
     onClick={onClick}
   >

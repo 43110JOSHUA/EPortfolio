@@ -1,12 +1,8 @@
 // Creates charts given data from InvestmentPrices.tsx
 import "chart.js/auto";
+import type { TooltipItem } from "chart.js";
 import { Bar, Doughnut } from "react-chartjs-2";
-import type { Investment } from "./InvestmentPrices";
-
-interface StockPrice {
-  symbol: string;
-  price: number;
-}
+import type { Investment, StockPrice } from "./InvestmentPrices";
 
 interface InvestmentChartsProps {
   investments: Investment[];
@@ -73,7 +69,7 @@ const InvestmentCharts = ({
       },
       tooltip: {
         callbacks: {
-          label: function (context: any) {
+          label: function (context: TooltipItem<"bar">) {
             const label = context.dataset.label || "";
             const value = context.parsed.y;
             return `${label}: $${value.toFixed(2)}`;
@@ -93,8 +89,8 @@ const InvestmentCharts = ({
       y: {
         beginAtZero: true,
         ticks: {
-          callback: function (value: any) {
-            return "$" + parseFloat(value).toFixed(2);
+          callback: function (value: number | string) {
+            return "$" + Number(value).toFixed(2);
           },
         },
       },
@@ -136,7 +132,7 @@ const InvestmentCharts = ({
       },
       tooltip: {
         callbacks: {
-          label: function (context: any) {
+          label: function (context: TooltipItem<"doughnut">) {
             const label = context.label || "";
             const value = context.parsed;
             return `${label}: $${value.toFixed(2)}`;

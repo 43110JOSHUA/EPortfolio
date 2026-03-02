@@ -1,11 +1,9 @@
-// Fetches stock prices from the backend API and displays investment stats
-// const BACKEND_URL =
-//   import.meta.env.VITE_BACKEND_URL || "http://localhost:8000/stock-prices";
-const API_KEY = import.meta.env.VITE_API_KEY || "no_key";
-
+// Fetches stock prices from the Finnhub API and displays investment stats
 import { useEffect, useState } from "react";
 import axios from "axios";
 import InvestmentCharts from "./InvestmentCharts";
+
+const API_KEY = import.meta.env.VITE_API_KEY || "no_key";
 
 export interface Investment {
   shares: number;
@@ -13,12 +11,12 @@ export interface Investment {
   avgCost: number;
 }
 
-interface StockPrice {
+export interface StockPrice {
   symbol: string;
   price: number;
 }
 
-// # Shares, Company Symbol, Average Cost per Share. Dont forget to update .env
+// # Shares, Company Symbol, Average Cost per Share. Don't forget to update .env
 const initialInvestmentsCost: Investment[] = [
   { shares: 23, symbol: "AAPL", avgCost: 176.58 },
   { shares: 80, symbol: "AMZN", avgCost: 185.24 },
@@ -30,17 +28,8 @@ const initialInvestmentsCost: Investment[] = [
   { shares: 25, symbol: "NVDA", avgCost: 177.79 },
   { shares: 11, symbol: "UNH", avgCost: 293.11 },
 ];
-const symbols = [
-  "AAPL",
-  "AMZN",
-  "ASML",
-  "GOOGL",
-  "INTU",
-  "META",
-  "MSFT",
-  "NVDA",
-  "UNH",
-];
+
+const symbols = initialInvestmentsCost.map((i) => i.symbol);
 
 const shareBadges = (
   <h5 className="container-fluid justify-content-center d-flex flex-wrap gap-1 p-0">
@@ -59,7 +48,6 @@ const InvestmentPrices = () => {
   useEffect(() => {
     const fetchStockPrices = async () => {
       try {
-        // -----Frontend fetches-----
         const promises = symbols.map((symbol) =>
           axios
             .get(
@@ -72,10 +60,6 @@ const InvestmentPrices = () => {
         );
         const response = await Promise.all(promises);
         setStockPrices(response);
-
-        // -----Backend fetches-----
-        // const response = await axios.get(BACKEND_URL);
-        // setStockPrices(response.data);
       } catch (error) {
         console.error("Error fetching stock prices.");
       } finally {
