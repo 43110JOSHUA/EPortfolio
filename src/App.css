@@ -1,3 +1,20 @@
+/* Pill navbar */
+.navbar-header {
+  background: transparent;
+}
+
+.navbar-pill {
+  background-color: var(--bs-body-bg);
+  border-radius: 9999px;
+  border: 1px solid var(--bs-border-color);
+  max-width: 900px;
+}
+
+.navbar-button:hover {
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
 .project-entry-btn:hover{
   transform: translateY(-2px);
   transition: all 0.2s ease-in-out;

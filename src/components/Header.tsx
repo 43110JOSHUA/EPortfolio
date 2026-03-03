@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import profileImg from "../assets/RoundPP.png";
-import IconButton from "./IconButton";
 import Avatar from "./Avatar";
-import PageBorder from "./PageBorder";
 
 const Header = () => {
   const [colorScheme, setColorScheme] = useState("light");
@@ -20,30 +18,50 @@ const Header = () => {
   }, [colorScheme]);
 
   return (
-    <header className="row bg-opacity-75 bg-body-tertiary border-bottom sticky-top py-2 px-2 px-md-3">
-      <PageBorder>
-      <div className="d-flex justify-content-between align-items-center">
-        <div className="d-flex d-wrap gap-2 align-items-center">
+    <header className="navbar-header sticky-top px-3 pt-3 pb-1">
+      <nav className="navbar-pill d-flex justify-content-between align-items-center px-4 py-2 mx-auto">
+        {/* Left: Avatar + Name */}
+        <a href="#" className="d-flex align-items-center gap-2 text-decoration-none text-body">
           <Avatar src={profileImg} />
-          <h5 className="pt-1 px-2">Joshua Tang / EPortfolio</h5>
-        </div>
-        <div className="d-flex gap-2">
-          <IconButton
-            icon="bi bi-github"
-            onClick={() =>
-              window.open("https://github.com/43110JOSHUA", "_blank")
-            }
-          />
-          <IconButton
-            icon="bi bi-instagram"
-            onClick={() =>
-              window.open("https://www.instagram.com/joshua.t4n/", "_blank")
-            }
-          />
-          <IconButton icon={themeIcon} onClick={toggleTheme} />
-        </div>
-      </div>
-      </PageBorder>
+          <span className="fw-semibold d-none d-sm-inline">Joshua Tang</span>
+        </a>
+
+        {/* Right: Nav links + theme toggle */}
+        <ul className="nav align-items-center gap-1 mb-0">
+          <li className="nav-item navbar-button">
+            <a
+              href="https://github.com/43110JOSHUA"
+              target="_blank"
+              rel="noreferrer"
+              className="nav-link d-flex align-items-center gap-1 px-2"
+            >
+              <i className="bi bi-github"></i>
+              <span className="d-none d-md-inline">GitHub</span>
+            </a>
+          </li>
+          <li className="nav-item navbar-button">
+            <a
+              href="https://www.instagram.com/joshua.t4n/"
+              target="_blank"
+              rel="noreferrer"
+              className="nav-link d-flex align-items-center gap-1 px-2"
+            >
+              <i className="bi bi-instagram"></i>
+              <span className="d-none d-md-inline">Instagram</span>
+            </a>
+          </li>
+          <li className="nav-item">
+            <button
+              type="button"
+              className="btn btn-sm nav-link px-2"
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+            >
+              <i className={themeIcon}></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
