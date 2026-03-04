@@ -47,12 +47,14 @@ const InvestmentCharts = ({
         data: chartData.map((data) => data.totalPurchasePrice),
         backgroundColor: blueColor,
         border: 0,
+        borderRadius: 6,
       },
       {
         label: "Current Worth",
         data: chartData.map((data) => data.currentWorth),
         backgroundColor: yellowColor,
         border: 0,
+        borderRadius: 6,
       },
     ],
   };

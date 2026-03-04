@@ -6,28 +6,28 @@ const Profile = () => {
       className="d-flex flex-row flex-wrap-reverse justify-content-center align-items-center row-gap-3 py-4"
       style={{ columnGap: "10rem" }}
     >
-      <div className="text-center text-md-start pb-3">
-        <h1>Zero to product, with love.</h1>
+      <div className="text-center text-md-start pb-3 px-3">
+        <h1>Fullstack Developer</h1>
         <p>
           Currently seeking software development internships/full-time
           opportunities
         </p>
-        <div className="d-flex flex-row gap-3 justify-content-center justify-content-md-start">
+        <div className="d-flex flex-row gap-3 justify-content-center justify-content-xxl-start">
           <a
             href="mailto:joshuaatang@gmail.com"
             className="btn btn-dark hover-button rounded-pill mb-2"
-            style={{ width: "100px" }}
+            style={{ width: "150px" }}
           >
-            Contact
+            <i className="bi bi-envelope me-1" /> Contact
           </a>
           <a
             href="https://docs.google.com/document/d/15r2RjzOa4LCba4B5FSgyNipGc0nkuD4fmlAoIB76Row/edit?usp=drive_link"
             target="_blank"
             rel="noreferrer"
             className="btn btn-outline-dark hover-button rounded-pill mb-2"
-            style={{ width: "100px" }}
+            style={{ width: "150px" }}
           >
-            Resume
+            <i className="bi bi-file-earmark-person me-1" /> Resume
           </a>
         </div>
       </div>

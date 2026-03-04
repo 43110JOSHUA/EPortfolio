@@ -39,7 +39,9 @@ const ProjectEntry = ({
           {/* Description */}
           <div className="d-flex flex-column gap-3 py-lg-2">
             <h2 className="mt-2">{tagline}</h2>
+
             <p className="card-text mb-1">{children}</p>
+
             <button
               className="btn btn-dark hover-button rounded-pill mb-2"
               style={{ width: "100px" }}
@@ -50,7 +52,7 @@ const ProjectEntry = ({
           </div>
 
           {/* Tool badges */}
-          <div className="d-flex flex-wrap gap-1 pt-1 pt-xxl-3">
+          <div className="d-flex flex-wrap gap-1 pt-1 pt-xxl-3 justify-content-center justify-content-md-start">
             {tools.map(([tool, color], index) => (
               <span
                 key={index}

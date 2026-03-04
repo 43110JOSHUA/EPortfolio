@@ -5,11 +5,11 @@ $custom-colors: (
   "nextjs": #000000,
   "postgre": #336791,
   "zerob": #af0cfb,
-  "stripe": #635BFF,
+  "stripe": #635bff,
   "bootstrap": #7952b3,
   "nodejs": #339933,
-  "light-tan": #fffefb,
-  "tan": #f7f6ef,
+  "light-tan": #fffffc,
+  "tan": #f8f7f2,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
