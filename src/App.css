@@ -1,18 +1,67 @@
+/* Page horizontal padding */
+.page-border {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .page-border {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-border {
+    padding-left: 5em;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-border {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .page-border {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .page-border {
+    padding-left: 17rem;
+    padding-right: 17rem;
+  }
+}
+
 /* Pill navbar */
 .navbar-header {
   background: transparent;
 }
 
 .navbar-pill {
-  background-color: var(--bs-body-bg);
   border-radius: 9999px;
-  border: 1px solid var(--bs-border-color);
-  max-width: 900px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-button:hover {
   transform: translateY(-2px);
   transition: all 0.2s ease-in-out;
+}
+
+.project-entry-gap {
+  gap: 3rem;
+}
+
+@media (min-width: 1200px) {
+  .project-entry-gap {
+    gap: 8rem;
+  }
 }
 
 .project-entry-btn:hover{

@@ -8,6 +8,8 @@ $custom-colors: (
   "stripe": #635BFF,
   "bootstrap": #7952b3,
   "nodejs": #339933,
+  "light-tan": #fffefb,
+  "tan": #f7f6ef,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

@@ -1,24 +1,20 @@
 import "./scss/custom.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
-import Header from "./components/Header";
-import Profile from "./components/Profile";
-import ProjectList from "./components/ProjectList";
-import ExperienceList from "./components/ExperienceList";
+import Header from "./components/navBar/Header";
+import Profile from "./components/introProfile/Profile";
+import ProjectList from "./components/projectList/ProjectList";
 import InvestmentList from "./components/investmentList/InvestmentList";
-import PageBorder from "./components/PageBorder";
-
 function App() {
   return (
-    <div className="container-fluid d-flex flex-column">
-      <Header />
-      <PageBorder>
-        <main className="row g-4 px-md-5 py-4">
-          <div className="col-12 col-lg-4">
+    <div className="container-fluid bg-tan d-flex flex-column">
+      <div className="page-border">
+        <Header />
+        <main className="py-4">
+          <div className="">
             <Profile />
-            <ExperienceList />
           </div>
-          <div className="col-12 col-lg-8">
+          <div className="">
             <ProjectList />
           </div>
         </main>
@@ -26,7 +22,7 @@ function App() {
         <footer className="px-md-5 pt-2 pb-4">
           <InvestmentList />
         </footer>
-      </PageBorder>
+      </div>
     </div>
   );
 }

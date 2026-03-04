@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import profileImg from "../assets/RoundPP.png";
+import profileImg from "../../assets/RoundPP.png";
 import Avatar from "./Avatar";
 
 const Header = () => {
@@ -18,10 +18,10 @@ const Header = () => {
   }, [colorScheme]);
 
   return (
-    <header className="navbar-header sticky-top px-3 pt-3 pb-1">
-      <nav className="navbar-pill d-flex justify-content-between align-items-center px-4 py-2 mx-auto">
+    <header className="navbar-header sticky-top px-3 pt-3 pt-lg-5 pb-1">
+      <nav className="navbar-pill bg-light-tan d-flex justify-content-between align-items-center px-4 py-2 mx-auto">
         {/* Left: Avatar + Name */}
-        <a href="#" className="d-flex align-items-center gap-2 text-decoration-none text-body">
+        <a className="d-flex align-items-center gap-2 text-decoration-none text-body">
           <Avatar src={profileImg} />
           <span className="fw-semibold d-none d-sm-inline">Joshua Tang</span>
         </a>
@@ -32,8 +32,7 @@ const Header = () => {
             <a
               href="https://github.com/43110JOSHUA"
               target="_blank"
-              rel="noreferrer"
-              className="nav-link d-flex align-items-center gap-1 px-2"
+              className="nav-link text-body d-flex align-items-center gap-1 px-2"
             >
               <i className="bi bi-github"></i>
               <span className="d-none d-md-inline">GitHub</span>
@@ -43,17 +42,16 @@ const Header = () => {
             <a
               href="https://www.instagram.com/joshua.t4n/"
               target="_blank"
-              rel="noreferrer"
-              className="nav-link d-flex align-items-center gap-1 px-2"
+              className="nav-link text-body d-flex align-items-center gap-1 px-2"
             >
               <i className="bi bi-instagram"></i>
               <span className="d-none d-md-inline">Instagram</span>
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item navbar-button">
             <button
               type="button"
-              className="btn btn-sm nav-link px-2"
+              className="btn btn-sm text-body border-0 px-2"
               onClick={toggleTheme}
               aria-label="Toggle theme"
             >
