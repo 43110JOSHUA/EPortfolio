@@ -7,7 +7,7 @@ import ProjectList from "./components/projectList/ProjectList";
 import InvestmentList from "./components/investmentList/InvestmentList";
 function App() {
   return (
-    <div className="container-fluid bg-tan d-flex flex-column">
+    <div className="container-fluid bg-tan d-flex flex-column mb-5">
       <div className="page-border">
         <Header />
         <main className="py-4">
@@ -19,7 +19,7 @@ function App() {
           </div>
         </main>
         <hr />
-        <footer className="pt-2 pb-5">
+        <footer className="py-4">
           <InvestmentList />
         </footer>
       </div>
