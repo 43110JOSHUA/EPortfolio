@@ -10,6 +10,13 @@
 /* Pill navbar */
 .navbar-header {
   background: transparent;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-header.navbar-hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
 }
 
 .navbar-pill {
