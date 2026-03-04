@@ -23,7 +23,7 @@ const InvestmentCharts = ({
     stockPrices.map((stock) => [
       stock.symbol,
       parseFloat(stock.price.toFixed(2)),
-    ])
+    ]),
   );
 
   // Calculate data for the chart
@@ -102,11 +102,11 @@ const InvestmentCharts = ({
   // Calculate totals for doughnut chart
   const totalPurchasePrice = chartData.reduce(
     (sum, data) => sum + data.totalPurchasePrice,
-    0
+    0,
   );
   const totalCurrentWorth = chartData.reduce(
     (sum, data) => sum + data.currentWorth,
-    0
+    0,
   );
   const totalGainLoss = totalCurrentWorth - totalPurchasePrice;
   const isProfit = totalGainLoss >= 0;
@@ -148,7 +148,7 @@ const InvestmentCharts = ({
     <div className="flex-container justify-content-center d-flex flex-wrap gap-5">
       <div
         className="dataCard InitialvsCurrentbyShare"
-        style={{ width: "50vw", height: "300px", minWidth: "300px" }}
+        style={{ width: "30vw", height: "300px", minWidth: "300px" }}
       >
         <Bar data={chartConfig} options={options} />
       </div>

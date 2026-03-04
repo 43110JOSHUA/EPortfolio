@@ -19,7 +19,7 @@ function App() {
           </div>
         </main>
         <hr />
-        <footer className="px-md-5 pt-2 pb-4">
+        <footer className="pt-2 pb-5">
           <InvestmentList />
         </footer>
       </div>
