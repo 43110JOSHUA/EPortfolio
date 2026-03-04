@@ -21,14 +21,14 @@ const ProjectEntry = ({
   onClick,
 }: Props) => {
   return (
-    <div className="bg-light-tan rounded-4 text-start p-4 p-lg-5">
+    <div className="bg-light-tan border border-light-grey rounded-4 text-start p-5">
       <div className="d-flex flex-column flex-lg-row align-items-center project-entry-gap">
         {/* LEFT: text content */}
         <div
           className="d-flex flex-column gap-3 gap-xl-4 align-self-start pt-lg-4"
           style={{ flex: 1 }}
         >
-          {/* Small header: icon + title + year */}
+          {/* Header*/}
           <div>
             <h6 className="d-flex align-items-center gap-2">
               {icon && <ProjectIcon src={icon} />}
@@ -37,13 +37,13 @@ const ProjectEntry = ({
           </div>
 
           {/* Description */}
-          <div className="d-flex flex-column gap-3 py-lg-2">
-            <h2 className="mt-2">{tagline}</h2>
+          <div className="d-flex flex-column gap-2 py-lg-2">
+            <h2 className="mt-1">{tagline}</h2>
 
             <p className="card-text mb-1">{children}</p>
 
             <button
-              className="btn btn-dark hover-button rounded-pill mb-2"
+              className="btn btn-dark hover-button rounded-pill align-self-end align-self-md-start mb-2"
               style={{ width: "100px" }}
               onClick={onClick}
             >
@@ -51,8 +51,10 @@ const ProjectEntry = ({
             </button>
           </div>
 
-          {/* Tool badges */}
-          <div className="d-flex flex-wrap gap-1 pt-1 pt-xxl-3 justify-content-center justify-content-md-start">
+          {/* Tool badges (desktop only when demo exists) */}
+          <div
+            className={`flex-wrap gap-1 pt-1 pt-xxl-3 justify-content-center justify-content-md-start ${demoSrc ? "d-none d-lg-flex" : "d-flex"}`}
+          >
             {tools.map(([tool, color], index) => (
               <span
                 key={index}
@@ -67,6 +69,21 @@ const ProjectEntry = ({
 
         {/* RIGHT: demo video */}
         {demoSrc && <ProjectDemo src={demoSrc} />}
+
+        {/* Tool badges (mobile only, below video) */}
+        {demoSrc && (
+          <div className="d-flex d-lg-none flex-wrap gap-1 pt-1 justify-content-center justify-content-md-start">
+            {tools.map(([tool, color], index) => (
+              <span
+                key={index}
+                className={`badge rounded-pill bg-${color}`}
+                style={{ fontSize: "0.85rem" }}
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

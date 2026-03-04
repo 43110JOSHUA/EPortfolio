@@ -5,7 +5,7 @@ import InvestmentPrices from "./InvestmentPrices";
 const InvestmentList = () => {
   return (
     <>
-      <div className="bg-light-tan rounded-4 p-4 p-lg-5">
+      <div className="bg-light-tan border border-light-grey rounded-4 p-4 p-lg-5">
         <div className="d-flex justify-content-center align-items-center gap-2 pb-3">
           <h5 className="mb-0">My Investments</h5>
           <button className="btn btn-outline-secondary disabled align-items-center d-flex gap-2">
