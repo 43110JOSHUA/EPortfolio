@@ -40,10 +40,10 @@ const ProjectEntry = ({
           <div className="d-flex flex-column gap-2 py-lg-2">
             <h2 className="mt-1">{tagline}</h2>
 
-            <p className="card-text mb-1">{children}</p>
+            <p className="card-text mb-3">{children}</p>
 
             <button
-              className="btn btn-dark hover-button rounded-pill align-self-end align-self-md-start mb-2"
+              className="btn btn-dark hover-button rounded-pill align-self-end align-self-lg-start mb-2"
               style={{ width: "100px" }}
               onClick={onClick}
             >

@@ -10,7 +10,7 @@ const ProjectList = () => {
       <div className="d-flex flex-column gap-4 align-items-center">
           <ProjectEntry
             title="Shield Message"
-            tagline="Never leave messages unsent."
+            tagline="Never Leave Important Messages Unsent."
             icon={ssIcon}
             demoSrc={ssDemo}
             tools={[
@@ -34,7 +34,7 @@ const ProjectList = () => {
           </ProjectEntry>
           <ProjectEntry
             title="Charity Coder"
-            tagline="Code for a cause."
+            tagline="Code For A Cause."
             icon={ccIcon}
             demoSrc={ccDemo}
             tools={[
