@@ -2,7 +2,7 @@ import "./scss/custom.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
 import Header from "./components/navBar/Header";
-import Profile from "./components/introProfile/Profile";
+import Profile from "./components/Profile";
 import ProjectList from "./components/projectList/ProjectList";
 import InvestmentList from "./components/investmentList/InvestmentList";
 function App() {

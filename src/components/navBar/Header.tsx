@@ -9,7 +9,7 @@ const Header = () => {
   const toggleTheme = () => {
     setColorScheme((prev) => (prev === "light" ? "dark" : "light"));
     setThemeIcon((prev) =>
-      prev === "bi bi-moon" ? "bi bi-brightness-high" : "bi bi-moon"
+      prev === "bi bi-moon" ? "bi bi-brightness-high" : "bi bi-moon",
     );
   };
 
@@ -28,7 +28,7 @@ const Header = () => {
 
         {/* Right: Nav links + theme toggle */}
         <ul className="nav align-items-center gap-1 mb-0">
-          <li className="nav-item navbar-button">
+          <li className="nav-item hover-button">
             <a
               href="https://github.com/43110JOSHUA"
               target="_blank"
@@ -38,7 +38,7 @@ const Header = () => {
               <span className="d-none d-md-inline">GitHub</span>
             </a>
           </li>
-          <li className="nav-item navbar-button">
+          <li className="nav-item hover-button">
             <a
               href="https://www.instagram.com/joshua.t4n/"
               target="_blank"
@@ -48,7 +48,7 @@ const Header = () => {
               <span className="d-none d-md-inline">Instagram</span>
             </a>
           </li>
-          <li className="nav-item navbar-button">
+          <li className="nav-item hover-button">
             <button
               type="button"
               className="btn btn-sm text-body border-0 px-2"
