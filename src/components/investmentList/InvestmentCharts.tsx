@@ -1,6 +1,7 @@
 // Creates charts given data from InvestmentPrices.tsx
 import "chart.js/auto";
 import type { TooltipItem } from "chart.js";
+import { useState, useEffect } from "react";
 import { Bar, Doughnut } from "react-chartjs-2";
 import type { Investment, StockPrice } from "./InvestmentPrices";
 
@@ -13,10 +14,25 @@ const InvestmentCharts = ({
   investments,
   stockPrices,
 }: InvestmentChartsProps) => {
-  // Color variables
-  const yellowColor = "rgba(255, 210, 0, 0.8)";
-  const redColor = "rgba(239, 68, 68, 0.8)";
-  const blueColor = "rgba(0, 100, 164, 0.8)";
+  const [isDark, setIsDark] = useState(
+    document.documentElement.getAttribute("data-bs-theme") === "dark"
+  );
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDark(document.documentElement.getAttribute("data-bs-theme") === "dark");
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-bs-theme"],
+    });
+    return () => observer.disconnect();
+  }, []);
+
+  // Theme-aware color variables
+  const yellowColor = isDark ? "rgba(255, 210, 0, 0.9)" : "rgba(255, 210, 0, 0.8)";
+  const redColor    = isDark ? "rgba(239, 68, 68, 0.9)"  : "rgba(239, 68, 68, 0.8)";
+  const blueColor   = isDark ? "rgba(96, 165, 250, 0.9)" : "rgba(0, 100, 164, 0.8)";
 
   // Create a map for quick price lookup
   const priceMap = new Map(
@@ -148,7 +164,7 @@ const InvestmentCharts = ({
     <div className="flex-container justify-content-center d-flex flex-wrap gap-5">
       <div
         className="dataCard InitialvsCurrentbyShare"
-        style={{ width: "40vw", height: "300px", minWidth: "300px" }}
+        style={{ width: "37vw", height: "300px", minWidth: "300px" }}
       >
         <Bar data={chartConfig} options={options} />
       </div>

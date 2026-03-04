@@ -16,3 +16,44 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // include all of Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+:root {
+  --color-tan: #f8f7f2;
+  --color-light-tan: #fffffc;
+}
+
+[data-bs-theme="dark"] {
+  --color-tan: #1d1e1f;
+  --color-light-tan: #161818;
+
+  .btn-dark {
+    --bs-btn-bg: #ececec;
+    --bs-btn-border-color: #ececec;
+    --bs-btn-color: #212529;
+    --bs-btn-hover-bg: #21252900;
+    --bs-btn-hover-border-color: #ececec;
+    --bs-btn-hover-color: #ececec;
+    --bs-btn-active-bg: #ececec;
+    --bs-btn-active-border-color: #ececec;
+    --bs-btn-active-color: #212529;
+  }
+
+  .btn-outline-dark {
+    --bs-btn-color: #ececec;
+    --bs-btn-border-color: #ececec;
+    --bs-btn-hover-bg: #ececec;
+    --bs-btn-hover-border-color: #ececec;
+    --bs-btn-hover-color: #212529;
+    --bs-btn-active-bg: #ececec;
+    --bs-btn-active-border-color: #ececec;
+    --bs-btn-active-color: #212529;
+  }
+}
+
+.bg-tan {
+  background-color: var(--color-tan) !important;
+}
+
+.bg-light-tan {
+  background-color: var(--color-light-tan) !important;
+}
