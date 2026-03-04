@@ -3,16 +3,16 @@ import profilePic from "../assets/RoundPP.png";
 const Profile = () => {
   return (
     <div
-      className="d-flex flex-row flex-wrap-reverse justify-content-center align-items-center row-gap-3 py-4"
+      className="d-flex flex-row flex-wrap-reverse justify-content-center align-items-center row-gap-2 py-4"
       style={{ columnGap: "10rem" }}
     >
-      <div className="text-center text-md-start pb-3 px-3">
+      <div className="text-center text-lg-start pb-3 px-3">
         <h1>Fullstack Developer</h1>
         <p>
           Currently seeking software development internships/full-time
           opportunities
         </p>
-        <div className="d-flex flex-row gap-3 justify-content-center justify-content-xxl-start">
+        <div className="d-flex flex-row gap-3 justify-content-center justify-content-lg-start">
           <a
             href="mailto:joshuaatang@gmail.com"
             className="btn btn-dark hover-button rounded-pill mb-2"
