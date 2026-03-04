@@ -23,7 +23,7 @@ const Header = () => {
         {/* Left: Avatar + Name */}
         <a className="d-flex align-items-center gap-2 text-decoration-none text-body">
           <Avatar src={profileImg} />
-          <span className="fw-semibold d-none d-sm-inline">Joshua Tang</span>
+          <span className="fw-semibold">Joshua Tang</span>
         </a>
 
         {/* Right: Nav links + theme toggle */}
