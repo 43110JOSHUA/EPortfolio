@@ -18,11 +18,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 :root {
+  --bs-body-bg: #f8f7f2;
   --color-tan: #f8f7f2;
   --color-light-tan: #fffffc;
 }
 
 [data-bs-theme="dark"] {
+  --bs-body-bg: #1d1e1f;
   --color-tan: #1d1e1f;
   --color-light-tan: #161818;
 
