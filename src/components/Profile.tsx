@@ -8,7 +8,7 @@ const Profile = () => {
     >
       <div className="text-center text-lg-start pb-3 px-3">
         <h1>Fullstack Developer</h1>
-        <p>
+        <p className="text-secondary">
           Currently seeking software development internships/full-time
           opportunities
         </p>

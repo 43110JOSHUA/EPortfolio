@@ -21,7 +21,7 @@ const ProjectEntry = ({
   onClick,
 }: Props) => {
   return (
-    <div className="bg-light-tan border border-light-grey rounded-4 text-start p-4 p-md-5">
+    <div className="bg-light-tan border border-light-grey rounded-4 text-start p-4 p--5">
       <div className="d-flex flex-column flex-lg-row align-items-center project-entry-gap">
         {/* LEFT: text content */}
         <div
@@ -40,7 +40,7 @@ const ProjectEntry = ({
           <div className="d-flex flex-column gap-2 py-lg-2">
             <h2 className="mt-1">{tagline}</h2>
 
-            <p className="card-text mb-3">{children}</p>
+            <p className="card-text text-secondary mb-3">{children}</p>
 
             <button
               className="btn btn-dark hover-button rounded-pill align-self-end align-self-lg-start mb-2"
@@ -72,7 +72,7 @@ const ProjectEntry = ({
 
         {/* Tool badges (mobile only, below video) */}
         {demoSrc && (
-          <div className="d-flex d-lg-none flex-wrap gap-1 pt-1 justify-content-center justify-content-md-start">
+          <div className="d-flex d-lg-none flex-wrap gap-1 justify-content-center justify-content-md-start">
             {tools.map(([tool, color], index) => (
               <span
                 key={index}

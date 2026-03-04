@@ -15,7 +15,7 @@ const InvestmentList = () => {
         </div>
         <div className="d-flex flex-column gap-3">
           <InvestmentPrices />
-          <small className="text-center">
+          <small className="text-center text-secondary">
             Note: Stock prices are currently not being fetched through backend
             for speed (free Azure backend goes to sleep if inactive).
           </small>
