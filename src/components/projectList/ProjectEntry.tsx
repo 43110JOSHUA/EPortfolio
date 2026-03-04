@@ -30,10 +30,10 @@ const ProjectEntry = ({
         >
           {/* Small header: icon + title + year */}
           <div>
-            <div className="d-flex fs-5 align-items-center gap-2">
+            <h6 className="d-flex align-items-center gap-2">
               {icon && <ProjectIcon src={icon} />}
               {title}
-            </div>
+            </h6>
           </div>
 
           {/* Description */}

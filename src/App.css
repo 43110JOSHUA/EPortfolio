@@ -10,7 +10,9 @@
 /* Pill navbar */
 .navbar-header {
   background: transparent;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .navbar-header.navbar-hidden {
@@ -21,6 +23,7 @@
 
 .navbar-pill {
   border-radius: 9999px;
+  border: 1px solid;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
 }
 

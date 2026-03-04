@@ -10,6 +10,7 @@ $custom-colors: (
   "nodejs": #339933,
   "light-tan": #fffffc,
   "tan": #f8f7f2,
+  "light-grey": #dfdfdf,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -21,12 +22,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   --bs-body-bg: #f8f7f2;
   --color-tan: #f8f7f2;
   --color-light-tan: #fffffc;
+  --color-light-grey: #dfdfdf;
 }
 
 [data-bs-theme="dark"] {
   --bs-body-bg: #1d1e1f;
   --color-tan: #1d1e1f;
   --color-light-tan: #161818;
+  --color-light-grey: #302f2f;
 
   .btn-dark {
     --bs-btn-bg: #ececec;
@@ -58,4 +61,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .bg-light-tan {
   background-color: var(--color-light-tan) !important;
+}
+
+.border-light-grey {
+  border-color: var(--color-light-grey) !important;
 }

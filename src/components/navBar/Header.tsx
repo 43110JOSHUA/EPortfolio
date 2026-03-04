@@ -18,7 +18,10 @@ const Header = () => {
     document.documentElement.setAttribute("data-bs-theme", colorScheme);
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) {
-      meta.setAttribute("content", colorScheme === "dark" ? "#1d1e1f" : "#f8f7f2");
+      meta.setAttribute(
+        "content",
+        colorScheme === "dark" ? "#1d1e1f" : "#f8f7f2",
+      );
     }
   }, [colorScheme]);
 
@@ -37,7 +40,7 @@ const Header = () => {
     <header
       className={`navbar-header sticky-top px-3 pt-3 pt-lg-5 pb-1${visible ? "" : " navbar-hidden"}`}
     >
-      <nav className="navbar-pill bg-light-tan d-flex justify-content-between align-items-center px-4 py-2 mx-auto">
+      <nav className="navbar-pill bg-light-tan border-1 border-light-grey d-flex justify-content-between align-items-center px-4 py-2 mx-auto">
         {/* Left: Avatar + Name */}
         <a className="d-flex align-items-center gap-2 text-decoration-none text-body">
           <Avatar src={profileImg} />
