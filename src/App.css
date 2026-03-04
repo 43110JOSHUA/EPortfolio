@@ -40,3 +40,23 @@
     gap: 8rem;
   }
 }
+
+/* View transition: circular reveal from theme toggle button */
+::view-transition-old(root) {
+  animation: none;
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  animation: theme-reveal 0.5s ease-in-out;
+  z-index: 2;
+}
+
+@keyframes theme-reveal {
+  from {
+    clip-path: circle(0% at var(--theme-toggle-x) var(--theme-toggle-y));
+  }
+  to {
+    clip-path: circle(150% at var(--theme-toggle-x) var(--theme-toggle-y));
+  }
+}

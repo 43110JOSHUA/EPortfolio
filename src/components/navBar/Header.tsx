@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import profileImg from "../../assets/RoundPP.png";
 import Avatar from "./Avatar";
 
@@ -7,11 +7,31 @@ const Header = () => {
   const [themeIcon, setThemeIcon] = useState("bi bi-moon");
   const [visible, setVisible] = useState(true);
 
-  const toggleTheme = () => {
-    setColorScheme((prev) => (prev === "light" ? "dark" : "light"));
-    setThemeIcon((prev) =>
-      prev === "bi bi-moon" ? "bi bi-brightness-high" : "bi bi-moon",
-    );
+  const toggleTheme = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+
+    document.documentElement.style.setProperty("--theme-toggle-x", `${x}px`);
+    document.documentElement.style.setProperty("--theme-toggle-y", `${y}px`);
+
+    const nextScheme = colorScheme === "light" ? "dark" : "light";
+    const nextIcon = themeIcon === "bi bi-moon" ? "bi bi-brightness-high" : "bi bi-moon";
+
+    const applyTheme = () => {
+      document.documentElement.setAttribute("data-bs-theme", nextScheme);
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", nextScheme === "dark" ? "#1d1e1f" : "#f8f7f2");
+      setColorScheme(nextScheme);
+      setThemeIcon(nextIcon);
+    };
+
+    if (!("startViewTransition" in document)) {
+      applyTheme();
+      return;
+    }
+
+    (document as any).startViewTransition(applyTheme);
   };
 
   useEffect(() => {
