@@ -21,11 +21,11 @@ const ProjectEntry = ({
   onClick,
 }: Props) => {
   return (
-    <div className="bg-light-tan border border-light-grey rounded-4 text-start p-4 p--5">
+    <div className="bg-light-tan border border-light-grey rounded-4 text-start p-4 p-lg-5">
       <div className="d-flex flex-column flex-lg-row align-items-center project-entry-gap">
         {/* LEFT: text content */}
         <div
-          className="d-flex flex-column gap-3 gap-xl-4 align-self-start pt-lg-4"
+          className="d-flex flex-column gap-3 gap-xl-4 align-self-start pt-lg-3"
           style={{ flex: 1 }}
         >
           {/* Header*/}

@@ -55,6 +55,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 
+.btn-dark {
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #212529;
+  --bs-btn-hover-color: #212529;
+}
+
 .bg-tan {
   background-color: var(--color-tan) !important;
 }
