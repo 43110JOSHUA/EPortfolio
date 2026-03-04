@@ -7,7 +7,7 @@ const Profile = () => {
       style={{ columnGap: "10rem" }}
     >
       <div className="text-center text-lg-start pb-3 px-3">
-        <h1>Fullstack Developer</h1>
+        <h1 className="fw-bold">Fullstack Developer</h1>
         <p className="text-secondary">
           Currently seeking software development internships/full-time
           opportunities

@@ -30,7 +30,7 @@ const ProjectEntry = ({
         >
           {/* Header*/}
           <div>
-            <h6 className="d-flex align-items-center gap-2">
+            <h6 className="d-flex fw-bold align-items-center gap-2">
               {icon && <ProjectIcon src={icon} />}
               {title}
             </h6>
