@@ -21,7 +21,7 @@ const ProjectEntry = ({
   onClick,
 }: Props) => {
   return (
-    <div className="bg-light-tan border border-light-grey rounded-4 text-start p-5">
+    <div className="bg-light-tan border border-light-grey rounded-4 text-start p-4 p-md-5">
       <div className="d-flex flex-column flex-lg-row align-items-center project-entry-gap">
         {/* LEFT: text content */}
         <div
