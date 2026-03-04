@@ -85,11 +85,19 @@ portfolio_website/
 │   │   │   ├── InvestmentCharts.tsx
 │   │   │   ├── InvestmentList.tsx
 │   │   │   └── InvestmentPrices.tsx
-│   │   ├── Avatar.tsx
-│   │   ├── Header.tsx
-│   │   ├── ProjectList.tsx
-│   │   └── ExperienceList.tsx
+│   │   ├── navBar/
+│   │   │   ├── Avatar.tsx
+│   │   │   └── Header.tsx
+│   │   ├── projectList/
+│   │   │   ├── ProjectDemo.tsx
+│   │   │   ├── ProjectEntry.tsx
+│   │   │   ├── ProjectIcon.tsx
+│   │   │   └── ProjectList.tsx
+│   │   └── Profile.tsx
+│   ├── scss/
+│   │   └── custom.scss
 │   ├── assets/
+│   ├── App.css
 │   ├── App.tsx
 │   └── main.tsx
 ├── public/
