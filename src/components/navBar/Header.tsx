@@ -16,6 +16,10 @@ const Header = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-bs-theme", colorScheme);
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+      meta.setAttribute("content", colorScheme === "dark" ? "#1d1e1f" : "#f8f7f2");
+    }
   }, [colorScheme]);
 
   useEffect(() => {
