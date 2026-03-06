@@ -76,7 +76,7 @@ const ProjectEntry = ({
             {tools.map(([tool, color], index) => (
               <span
                 key={index}
-                className={`badge rounded-pill bg-${color}`}
+                className={`badge rounded-pill border bg-${color}`}
                 style={{ fontSize: "0.85rem" }}
               >
                 {tool}
