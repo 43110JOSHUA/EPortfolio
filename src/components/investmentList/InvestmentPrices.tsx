@@ -61,7 +61,7 @@ const InvestmentPrices = () => {
         const response = await Promise.all(promises);
         setStockPrices(response);
       } catch (error) {
-        console.error("Error fetching stock prices.");
+        console.error("Error fetching stock prices.", error);
       } finally {
         setLoading(false);
       }
