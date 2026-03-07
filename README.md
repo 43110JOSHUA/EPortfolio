@@ -19,7 +19,7 @@ A full-stack portfolio website built with React and Node.js, showcasing my proje
 - Bootstrap 5
 - Chart.js
 
-**Backend:**
+**Backend:** ([repo](https://github.com/43110JOSHUA/EPortBackend))
 
 - Node.js
 
