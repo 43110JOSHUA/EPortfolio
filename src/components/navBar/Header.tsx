@@ -7,6 +7,7 @@ const Header = () => {
   const [themeIcon, setThemeIcon] = useState("bi bi-moon");
   const [visible, setVisible] = useState(true);
 
+  // Toggle theme with ripple effect
   const toggleTheme = (e: React.MouseEvent<HTMLButtonElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = rect.left + rect.width / 2;
@@ -16,12 +17,11 @@ const Header = () => {
     document.documentElement.style.setProperty("--theme-toggle-y", `${y}px`);
 
     const nextScheme = colorScheme === "light" ? "dark" : "light";
-    const nextIcon = themeIcon === "bi bi-moon" ? "bi bi-brightness-high" : "bi bi-moon";
+    const nextIcon =
+      themeIcon === "bi bi-moon" ? "bi bi-brightness-high" : "bi bi-moon";
 
     const applyTheme = () => {
       document.documentElement.setAttribute("data-bs-theme", nextScheme);
-      const meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", nextScheme === "dark" ? "#1d1e1f" : "#f8f7f2");
       setColorScheme(nextScheme);
       setThemeIcon(nextIcon);
     };
@@ -31,20 +31,14 @@ const Header = () => {
       return;
     }
 
-    (document as any).startViewTransition(applyTheme);
+    (
+      document as Document & {
+        startViewTransition: (callback: () => void) => void;
+      }
+    ).startViewTransition(applyTheme);
   };
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-bs-theme", colorScheme);
-    const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        colorScheme === "dark" ? "#1d1e1f" : "#f8f7f2",
-      );
-    }
-  }, [colorScheme]);
-
+  // Show/hide header on scroll
   useEffect(() => {
     let lastY = window.scrollY;
     const onScroll = () => {
