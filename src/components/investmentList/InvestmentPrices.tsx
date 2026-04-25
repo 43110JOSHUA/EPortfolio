@@ -23,7 +23,7 @@ const initialInvestmentsCost: Investment[] = [
   { shares: 1, symbol: "ASML", avgCost: 736.75 },
   { shares: 42, symbol: "GOOGL", avgCost: 173.29 },
   { shares: 2, symbol: "INTU", avgCost: 627.51 },
-  { shares: 10, symbol: "META", avgCost: 606.7 },
+  { shares: 15, symbol: "META", avgCost: 583.78 },
   { shares: 15, symbol: "MSFT", avgCost: 376 },
   { shares: 25, symbol: "NVDA", avgCost: 177.79 },
   { shares: 11, symbol: "UNH", avgCost: 293.11 },
