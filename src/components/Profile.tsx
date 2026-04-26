@@ -9,16 +9,17 @@ const Profile = () => {
       <div className="text-center text-lg-start pb-3 px-3">
         <h1 className="fw-bold">Full Stack Developer</h1>
         <p className="text-secondary">
-          Currently seeking software development internships/full-time
-          opportunities
+          "Do not pray for easy lives, pray to be stronger men"
         </p>
         <div className="d-flex flex-row gap-3 justify-content-center justify-content-lg-start">
           <a
-            href="mailto:joshuaatang@gmail.com"
+            href="https://www.linkedin.com/in/joshuaadamtang/"
+            target="_blank"
+            rel="noreferrer"
             className="btn btn-dark hover-button rounded-pill mb-2"
             style={{ width: "150px" }}
           >
-            <i className="bi bi-envelope me-1" /> Contact
+            <i className="bi bi-linkedin me-1" /> LinkedIn
           </a>
           <a
             href="https://docs.google.com/document/d/15r2RjzOa4LCba4B5FSgyNipGc0nkuD4fmlAoIB76Row/edit?usp=drive_link"
