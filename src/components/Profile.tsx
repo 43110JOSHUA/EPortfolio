@@ -39,6 +39,7 @@ const Profile = () => {
             alt="Profile"
             className="rounded-circle border border-3"
             style={{ width: "260px", height: "260px" }}
+            loading="eager"
           />
           <div
             className="bg-body-tertiary rounded-circle position-absolute border border-2"

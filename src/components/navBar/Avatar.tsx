@@ -10,6 +10,7 @@ const Avatar = ({ src }: Props) => {
         alt="Avatar"
         className="rounded-circle"
         style={{ width: "40px", height: "40px" }}
+        loading="eager"
       />
     </div>
   );
