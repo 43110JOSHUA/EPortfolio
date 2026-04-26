@@ -3,15 +3,16 @@ import profilePic from "../assets/RoundPP.png";
 const Profile = () => {
   return (
     <div
-      className="d-flex flex-row flex-wrap-reverse justify-content-center align-items-center row-gap-2 py-4"
+      className="d-flex flex-wrap-reverse justify-content-center align-items-center row-gap-2 py-4"
       style={{ columnGap: "10rem" }}
     >
-      <div className="text-center text-lg-start pb-3 px-3">
+      <div className="text-center pb-3 px-3">
         <h1 className="fw-bold">Full Stack Developer</h1>
-        <p className="text-secondary">
-          "Do not pray for easy lives, pray to be stronger men"
+        <p className="text-secondary" style={{ maxWidth: "500px" }}>
+          "You might have seen a housefly, maybe even a super fly… but I bet you
+          ain’t never seen a donkey fly!"
         </p>
-        <div className="d-flex flex-row gap-3 justify-content-center justify-content-lg-start">
+        <div className="d-flex flex-row gap-3 justify-content-center">
           <a
             href="https://www.linkedin.com/in/joshuaadamtang/"
             target="_blank"
