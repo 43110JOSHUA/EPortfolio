@@ -23,7 +23,7 @@ const Profile = () => {
             <i className="bi bi-linkedin me-1" /> LinkedIn
           </a>
           <a
-            href="https://docs.google.com/document/d/15r2RjzOa4LCba4B5FSgyNipGc0nkuD4fmlAoIB76Row/edit?usp=drive_link"
+            href="https://drive.google.com/file/d/1E-qLS_F8bF2nzkx0LpVH3RxUAWn3-uS5/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="btn btn-outline-dark hover-button rounded-pill mb-2"
